@@ -1,0 +1,328 @@
+     
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Bank Marketing Dataset</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="../css/style.css" rel='stylesheet' type='text/css' />
+<!-- Graph C../SS -->
+<link href="../css/font-awesome.css" rel="stylesheet"> 
+<!-- jQuery -->
+<link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css'>
+<!-- lined-icons -->
+<link rel="stylesheet" href="../css/icon-font.min.css" type='text/css' />
+<!-- //lined-icons -->
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+
+<!--//skycons-icons-->
+</head> 
+<body>
+   <div class="page-container">
+   <!--/content-inner-->
+  <div class="left-content">
+     <div class="inner-content">
+    <!-- header-starts -->
+      <div class="header-section">
+
+          <div class="clearfix"></div>
+        </div>
+          <!-- //header-ends -->
+            <div class="outter-wp">
+                <!--custom-widgets-->
+                   <div class="custom-widgets">
+                   <div class="row-one">
+                    <div class="col-md-3 widget">
+                      <div class="stats-left ">
+                        <h5>Original Accuracy</h5>
+                        <label>90.3</label>
+                      </div>
+                    </div>
+                    <div class="col-md-3 widget states-mdl">
+                      <div class="stats-left">
+                        <h5>Current Accuracy</h5>
+                        <label id="result2">90</label>
+                      </div>
+                    </div>
+                    <div class="col-md-3 widget states-thrd">
+                      <div class="stats-left">
+                        <h5>Customer Prediction</h5>
+                        <label id="result">Subscribe or Not Subscribe</label>
+                      </div>
+                      <div class="clearfix"> </div> 
+                    </div>
+                    
+                    <div class="clearfix"> </div> 
+                  </div>
+                </div>
+                        <!--//custom-widgets-->
+
+          <!--######################################### main data-->
+        <div>
+        <div class="pageCont">
+          <div class="wrap">
+            <header class="pageCont_header">
+              <h1> Predict Potential Client Result </h1>
+              <p>Client Previous Campagign Based Prediction </p>
+            </header>
+
+            <section class="pageCont_main">
+
+              <h2>Previous Campaign Result</h2>
+              <p class="formTitle">Duration  : </p><input id="duration" type="text" name="duration" value="30" > <br><br>
+
+              <!-- Day : <input id="day" type="text" name="day" value="1"><br><br> -->
+
+              <p class="formTitle">Month  : </p><input id="month" type="text" name="month" value="mar"><br><br>
+
+              <!-- Campaign  : <input id="campaign" type="text" name="campaign" value="10" ><br><br>
+               -->
+              <p class="formTitle">Previous Days  :</p><input id="pdays" type="text" name="pdays" value="10" ><br><br>
+
+              <p class="formTitle">Previous Contacts  : </p><input id="previous" type="text" name="previous" value="10" ><br><br>
+
+
+              <form name="form12">
+              <p class="formTitle">Previous Outcome:</p>
+                <label><input id="Radio1" type="radio" name="Radio1" checked="checked">Sucess</label>
+                <label><input id="Radio2" type="radio" name="Radio1">Failure</label>
+                <label><input id="Radio3" type="radio" name="Radio1">Other</label>
+                <label><input id="Radio4" type="radio" name="Radio1">Unknown</label>
+              </form>
+
+
+              <button onclick="sendData()">
+                Evaluation
+              </button>
+            </section>
+
+<div>
+<p id="result"></p>
+<p id="result2"></p>
+</div>
+
+</div>
+</div>
+
+
+<script>
+function sendData(){
+var duration = document.getElementById("duration").value
+var month = document.getElementById("month").value
+var pdays = document.getElementById("pdays").value
+var previous = document.getElementById("previous").value
+
+
+
+
+
+////////////////// radio for previous outcome
+
+if (document.form12.Radio1[0].checked) {
+  radio1_pout = "Success";
+  radio2_pout = "False";
+  radio3_pout = "False";
+  radio4_pout = "False";
+} else {
+  radio1_edu = "False";
+}
+
+if (document.form12.Radio1[1].checked) {
+  radio2_pout = "Failure";
+  radio3_pout = "False"
+  radio4_pout = "False";
+  radio1_pout = "False"
+} else {
+  radio2_pout = "False";
+}
+
+if (document.form12.Radio1[2].checked) {
+  radio3_pout = "Other";
+  radio4_pout = "False";
+  radio1_pout = "False";
+  radio2_pout = "False" 
+} else {
+  radio3_pout = "False";
+}
+
+if (document.form12.Radio1[3].checked) {
+  radio4_pout = "Unknown";
+  radio1_pout = "False";
+  radio3_pout = "False";
+  radio2_pout = "False"
+} else {
+  radio4_pout = "False";
+}
+
+
+
+
+$.ajax({
+    type: "POST",
+    url: "/cgi-bin/pre1_predict2.py",
+    data: { duration:JSON.stringify(duration),
+    month:JSON.stringify(month),
+    pdays:JSON.stringify(pdays),
+    previous:JSON.stringify(previous),
+    radio1_pout:JSON.stringify(radio1_pout),
+    radio2_pout:JSON.stringify(radio2_pout),
+    radio3_pout:JSON.stringify(radio3_pout),
+    radio4_pout:JSON.stringify(radio4_pout)},
+   
+    async: true,        
+    success: function( msg ) {
+    
+    var status = msg['status'];
+
+    console.log("tws")
+    console.log(status)
+
+    if (status == "yes") {
+       var Result_Name = "Analysis from previous dataset the Client might " + msg['Result_Name'];
+     // var Result_Accuracy = "The Accuracy is " + msg['Result_Accuracy'] + "%"; 
+      var Result_Accuracy = msg['Result_Accuracy']; 
+
+
+      document.getElementById("result").innerHTML = Result_Name
+      document.getElementById("result2").innerHTML = Result_Accuracy
+
+       showTree();
+    }
+    else {
+      errorMessage = "result_"
+      errorMessage += msg['except']
+      alert(errorMessage);
+    }  
+    },
+    error: function(msg){     
+    alert("Error sending data!");
+    }
+  }); 
+}
+
+</script>
+
+
+<style>
+  .nodeRect {
+    stroke: white;
+    stroke-width: 2px;
+  }
+  
+  .nodeName {
+    fill: white;
+    font-size: 12px;
+    font-family: simsun;
+  }
+
+  .node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node {
+  font: 10px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+  </style>
+
+        </div>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="showTree.js"></script>
+
+        <!--######################################### main data-->
+                   <!--footer section start-->
+                    <footer>
+                       <p>&copy 2018 . All Rights Reserved | Design by Imeilia Santoso</a></p>
+                    </footer>
+                  <!--footer section end-->
+                </div>
+              </div>
+        <!--//content-inner-->
+      <!--/sidebar-menu-->
+        <div class="sidebar-menu">
+          <header class="logo">
+          <a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="index.html"> <span id="logo"> <h1>Admin</h1></span> 
+          <!--<img id="logo" src="" alt="Logo"/>--> 
+          </a> 
+        </header>
+      <div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
+      <!--/down-->
+              <div class="down">  
+                    <a href=""><img src="../../images/admin.jpg"></a>
+                    <a href=""><span class=" name-caret">Administrator</span></a>
+                   <p>Marketing Department</p>
+                  
+                  </div>
+                 <!--//down-->
+                           <div class="menu">
+                  <ul id="menu" >
+                    <li><a href="../index.html"><i class="fa fa-tachometer"></i> <span>Dashboard</span></a></li>
+                    
+                     <li id="menu-academico" ><a href="../register_page/register.html"><i class="fa fa-file-text-o"></i> 
+                      <span>Register New Client</span></a>  
+                     </li>
+
+
+                  <li><a href="predict.html"><i class="lnr lnr-chart-bars"></i> <span>Prediction</span> <span class="fa fa-angle-right" style="float: right"></span></a>
+                    <ul>
+                    <li><a href="predict.html"><i class="lnr lnr-map"></i>Profile</a></li>
+                    <li><a href="predict2.html"><i class="lnr lnr-apartment"></i>Feature</a></li>
+                  </ul>
+                  </li>
+                  <li id="menu-comunicacao" ><a href="../../learn_page/learn.html"><i class="fa fa-smile-o"></i> <span>Learn More</span></a>
+                  </li>
+                  </ul>
+                </div>
+                </div>
+                <div class="clearfix"></div>    
+              </div>
+              <script>
+              var toggle = true;
+                    
+              $(".sidebar-icon").click(function() {                
+                if (toggle)
+                {
+                $(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+                $("#menu span").css({"position":"absolute"});
+                }
+                else
+                {
+                $(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+                setTimeout(function() {
+                  $("#menu span").css({"position":"relative"});
+                }, 400);
+                }
+                      
+                      toggle = !toggle;
+                    });
+              </script>
+<!--js -->
+
+<!-- Bootstrap Core JavaScript -->
+   <script src="../js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

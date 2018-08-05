@@ -1,0 +1,547 @@
+﻿{
+  "path": [
+    {
+      "ID": "1",
+      "p": [
+        "URL_of_Anchor",
+        "duration <= 471",
+        "age <= 60",
+        "no"
+      ]
+    },
+    {
+      "ID": "2",
+      "p": [
+        "URL_of_Anchor",
+        "duration > 471",
+        "duration > 800",
+        "contact = cellular",
+        "yes"
+      ]
+    },
+    {
+      "ID": "3",
+      "p": [
+        "URL_of_Anchor",
+        "duration>471",
+        "duration>800",
+        "contact='telephone'",
+        "marital='divorced'",
+        "no"
+      ]
+    },
+    {
+      "ID": "4",
+      "p": [
+       "URL_of_Anchor",
+        "duration>471",
+        "duration>800",
+        "contact='telephone'",
+        "marital='divorced'",
+        "no"
+      ]
+    }
+  ],
+  
+
+
+  "tree": 
+{
+  "name": "URL_of_Anchor",
+  "children": [{
+      "name": "duration <= 471",
+      "children": [{
+          "name": "age <= 60",
+          "children": [{
+            "children": [],
+            "size": 10,
+            "name": "no"
+          }]
+        },
+        {
+          "name": "age > 60",
+          "children": [{
+              "name": "duration <= 126",
+              "children": [{
+                "children": [],
+                "size": 10,
+                "name": "no"
+              }]
+            },
+            {
+              "name": "duration > 126",
+              "children": [{
+                  "name": "contact = unknown",
+                  "children": [{
+                    "children": [],
+                    "size": 10,
+                    "name": "no"
+                  }]
+                },
+                {
+                  "name": "contact = cellular",
+                  "children": [{
+                      "name": "marital = married",
+                      "children": [{
+                          "name": "job = Employed",
+                          "children": [{
+                              "name": "age <= 65",
+                              "children": [{
+                                  "name": "age <= 61",
+                                  "children": [{
+                                      "name": "duration <= 169",
+                                      "children": [{
+                                        "children": [],
+                                        "size": 10,
+                                        "name": "yes"
+                                      }]
+                                    },
+                                    {
+                                      "name": "duration > 169",
+                                      "children": [{
+                                        "children": [],
+                                        "size": 10,
+                                        "name": "no"
+                                      }]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "age > 61",
+                                  "children": [{
+                                    "children": [],
+                                    "size": 10,
+                                    "name": "yes"
+                                  }]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "age > 65",
+                              "children": [{
+                                  "name": "duration <= 332",
+                                  "children": [{
+                                    "children": [],
+                                    "size": 10,
+                                    "name": "no"
+                                  }]
+                                },
+                                {
+                                  "name": "duration > 332",
+                                  "children": [{
+                                    "children": [],
+                                    "size": 10,
+                                    "name": "yes"
+                                  }]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "job = Unknown",
+                          "children": [{
+                            "children": [],
+                            "size": 10,
+                            "name": "no"
+                          }]
+                        },
+                        {
+                          "name": "job = Unemployed",
+                          "children": [{
+                            "children": [],
+                            "size": 10,
+                            "name": "no"
+                          }]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "marital = single",
+                      "children": [{
+                        "children": [],
+                        "size": 10,
+                        "name": "no"
+                      }]
+                    },
+                    {
+                      "name": "marital = divorced",
+                      "children": [{
+                        "children": [],
+                        "size": 10,
+                        "name": "yes"
+                      }]
+                    }
+                  ]
+                },
+                {
+                  "name": "contact = telephone",
+                  "children": [{
+                    "children": [],
+                    "size": 10,
+                    "name": "no"
+                  }]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "duration > 471",
+      "children": [{
+          "name": "duration <= 800",
+          "children": [{
+              "name": "contact = unknown",
+              "children": [{
+                "children": [],
+                "size": 10,
+                "name": "no"
+              }]
+            },
+            {
+              "name": "contact = cellular",
+              "children": [{
+                  "name": "duration <= 605",
+                  "children": [{
+                      "name": "job = Employed",
+                      "children": [{
+                        "children": [],
+                        "size": 10,
+                        "name": "no"
+                      }]
+                    },
+                    {
+                      "name": "job = Unknown",
+                      "children": [{
+                        "children": [],
+                        "size": 10,
+                        "name": "no"
+                      }]
+                    },
+                    {
+                      "name": "job = Unemployed",
+                      "children": [{
+                          "name": "age <= 59",
+                          "children": [{
+                              "name": "marital = married",
+                              "children": [{
+                                "children": [],
+                                "size": 10,
+                                "name": "no"
+                              }]
+                            },
+                            {
+                              "name": "marital = single",
+                              "children": [{
+                                  "name": "duration <= 524",
+                                  "children": [{
+                                    "children": [],
+                                    "size": 10,
+                                    "name": "no"
+                                  }]
+                                },
+                                {
+                                  "name": "duration > 524",
+                                  "children": [{
+                                    "children": [],
+                                    "size": 10,
+                                    "name": "yes"
+                                  }]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "marital = divorced",
+                              "children": [{
+                                  "name": "age <= 55",
+                                  "children": [{
+                                    "children": [],
+                                    "size": 10,
+                                    "name": "yes"
+                                  }]
+                                },
+                                {
+                                  "name": "age > 55",
+                                  "children": [{
+                                    "children": [],
+                                    "size": 10,
+                                    "name": "no"
+                                  }]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "age > 59",
+                          "children": [{
+                              "name": "age <= 72",
+                              "children": [{
+                                "children": [],
+                                "size": 10,
+                                "name": "yes"
+                              }]
+                            },
+                            {
+                              "name": "age > 72",
+                              "children": [{
+                                "children": [],
+                                "size": 10,
+                                "name": "no"
+                              }]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "duration > 605",
+                  "children": [{
+                      "name": "marital = married",
+                      "children": [{
+                        "children": [],
+                        "size": 10,
+                        "name": "no"
+                      }]
+                    },
+                    {
+                      "name": "marital = single",
+                      "children": [{
+                          "name": "age <= 38",
+                          "children": [{
+                            "children": [],
+                            "size": 10,
+                            "name": "yes"
+                          }]
+                        },
+                        {
+                          "name": "age > 38",
+                          "children": [{
+                            "children": [],
+                            "size": 10,
+                            "name": "no"
+                          }]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "marital = divorced",
+                      "children": [{
+                          "name": "age <= 58",
+                          "children": [{
+                            "children": [],
+                            "size": 10,
+                            "name": "no"
+                          }]
+                        },
+                        {
+                          "name": "age > 58",
+                          "children": [{
+                            "children": [],
+                            "size": 10,
+                            "name": "yes"
+                          }]
+                        }
+
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "contact = telephone",
+              "children": [{
+                  "name": "age <= 70",
+                  "children": [{
+                    "children": [],
+                    "size": 10,
+                    "name": "no"
+                  }]
+                },
+                {
+                  "name": "age > 70",
+                  "children": [{
+                      "name": "age <= 78",
+                      "children": [{
+                        "children": [],
+                        "size": 10,
+                        "name": "yes"
+                      }]
+                    },
+                    {
+                      "name": "age > 78",
+                      "children": [{
+                          "name": "age <= 81",
+                          "children": [{
+                            "children": [],
+                            "size": 10,
+                            "name": "no"
+                          }]
+                        },
+                        {
+                          "name": "age > 81",
+                          "children": [{
+                            "children": [],
+                            "size": 10,
+                            "name": "yes"
+                          }]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "name": "duration > 800",
+          "children": [{
+              "name": "contact = unknown",
+              "children": [{
+                  "name": "marital = married",
+                  "children": [{
+                    "children": [],
+                    "size": 10,
+                    "name": "no"
+                  }]
+                },
+                {
+                  "name": "marital = single",
+                  "children": [{
+                    "children": [],
+                    "size": 10,
+                    "name": "yes"
+                  }]
+                },
+                {
+                  "name": "marital = divorced",
+                  "children": [{
+                      "name": "age <= 30",
+                      "children": [{
+                        "children": [],
+                        "size": 10,
+                        "name": "no"
+                      }]
+                    },
+                    {
+                      "name": "age > 30",
+                      "children": [{
+                          "name": "job = Employed",
+                          "children": [{
+                              "name": "age <= 54",
+                              "children": [{
+                                "children": [],
+                                "size": 10,
+                                "name": "yes"
+                              }]
+                            },
+                            {
+                              "name": "age > 54",
+                              "children": [{
+                                "children": [],
+                                "size": 10,
+                                "name": "no"
+                              }]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "job = Unknown",
+                          "children": [{
+                            "children": [],
+                            "size": 10,
+                            "name": "yes"
+                          }]
+                        },
+                        {
+                          "name": "job = Unemployed",
+                          "children": [{
+                            "children": [],
+                            "size": 10,
+                            "name": "yes"
+                          }]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "contact = cellular",
+              "children": [{
+                "children": [],
+                "size": 10,
+                "name": "yes"
+              }]
+            },
+
+            {
+              "name": "contact = telephone",
+              "children": [{
+                  "name": "marital = married",
+                  "children": [{
+                    "children": [],
+                    "size": 10,
+                    "name": "yes"
+                  }]
+                },
+                {
+                  "name": "marital = single",
+                  "children": [{
+                      "name": "duration <= 921",
+                      "children": [{
+                        "children": [],
+                        "size": 10,
+                        "name": "no"
+                      }]
+                    },
+                    {
+                      "name": "duration > 921",
+                      "children": [{
+                          "name": "duration <= 1196",
+                          "children": [{
+                            "children": [],
+                            "size": 10,
+                            "name": "yes"
+                          }]
+                        },
+                        {
+                          "name": "duration > 1196",
+                          "children": [{
+                            "children": [],
+                            "size": 10,
+                            "name": "no"
+                          }]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "marital = divorced",
+                  "children": [{
+                    "children": [],
+                    "size": 10,
+                    "name": "no"
+                  }]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+
+}
+}
+

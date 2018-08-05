@@ -1,0 +1,324 @@
+ <!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Bank Marketing Dataset</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
+<script src="js/jquery-1.10.2.min.js"></script>
+<!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="js/amcharts.js"></script>
+<script src="js/serial.js"></script>    
+<script src="js/light.js"></script>
+<script src="js/dataloader.min.js"></script>
+
+<!--//s###################################################################################-->
+<!--//s###################################################################################-->
+<!--//skycons-icons-->
+</head> 
+<body>
+   <div class="page-container">
+   <!--/content-inner-->
+    <div class="left-content">
+       <div class="inner-content">
+        <!-- header-starts -->
+            <div class="header-section">
+
+                    <div class="clearfix"></div>
+                </div>
+                    <!-- //header-ends -->
+                        <div class="outter-wp">
+                                <!--custom-widgets-->
+                                                <div class="custom-widgets">
+                                                   <div class="row-one">
+                                                        <div class="col-md-3 widget">
+                                                            <div class="stats-left ">
+                                                                <h5>Total</h5>
+                                                                <h4> Customers</h4>
+                                                            </div>
+                                                            <div class="stats-right">
+                                                                <label>90</label>
+                                                            </div>
+                                                            <div class="clearfix"> </div>   
+                                                        </div>
+                                                        <div class="col-md-3 widget states-mdl">
+                                                            <div class="stats-left">
+                                                                <h5>Accuracy</h5>
+                                                                <h4>Rate</h4>
+                                                            </div>
+                                                            <div class="stats-right">
+                                                                <label> 85</label>
+                                                            </div>
+                                                            <div class="clearfix"> </div>   
+                                                        </div>
+                                                        <div class="col-md-3 widget states-thrd">
+                                                            <div class="stats-left">
+                                                                <h5>Total All</h5>
+                                                                <h4>Customers</h4>
+                                                            </div>
+                                                            <div class="stats-right">
+                                                                <label>51</label>
+                                                            </div>
+                                                            <div class="clearfix"> </div>   
+                                                        </div>
+                                                        <div class="col-md-3 widget states-last">
+                                                            <div class="stats-left">
+                                                                <h5>Today</h5>
+                                                                <h4>Alerts</h4>
+                                                            </div>
+                                                            <div class="stats-right">
+                                                                <label>30</label>
+                                                            </div>
+                                                            <div class="clearfix"> </div>   
+                                                        </div>
+                                                        <div class="clearfix"> </div>   
+                                                    </div>
+                                                </div>
+                                                <!--//custom-widgets-->
+<!--//s###################################################################################-->
+<!--//s###################################################################################-->
+<!-- char no1-->
+
+
+                                    <div id="chartdiv5"></div>
+                                    <script src=index_page/chart.js></script>
+
+                                    <div class="grid-charts">
+                                         <div class="col-md-6 graph-2">
+                                         <h3 class="inner-tittle">Job Attribute </h3>
+                                         
+                                         <div class="grid-1" id="chart">
+                                            <script src="index_page/job_bar.js"></script>           
+                                                        
+                                        </div>
+                                        </div>
+                                        
+
+                                         <div class="col-md-6 graph-2 second">
+                                            <h3 class="inner-tittle">Marital Attribute </h3>
+                                                <div class="grid-1" id="chart2">
+                                                <script src="index_page/marital_bar.js"></script>
+                                                    </div>
+                                        </div>  
+                                    </div>
+                                                
+<!--                                    <div id="test"></div>
+                                    TESTTT
+                                    <style>
+                                        
+                                        .node text {
+  font: 10px sans-serif;
+}
+
+.join,
+.link,
+.node rect {
+  fill: none;
+  stroke: #636363;
+  stroke-width: 1.5px;
+}
+
+.right text {
+  text-anchor: end;
+}
+
+.node rect {
+  fill: white;
+}
+
+.link path,
+.node rect,
+.node text {
+  -webkit-transition: fill-opacity 500ms linear, stroke-opacity 500ms linear, stroke 500ms linear, fill 500ms linear;
+  -moz-transition: fill-opacity 500ms linear, stroke-opacity 500ms linear, stroke 500ms linear, fill 500ms linear;
+  -ms-transition: fill-opacity 500ms linear, stroke-opacity 500ms linear, stroke 500ms linear, fill 500ms linear;
+  -o-transition: fill-opacity 500ms linear, stroke-opacity 500ms linear, stroke 500ms linear, fill 500ms linear;
+  transition: fill-opacity 500ms linear, stroke-opacity 500ms linear, stroke 500ms linear, fill 500ms linear;
+}
+
+.node .array rect {
+  stroke: #636363;
+}
+
+.node .element rect {
+  fill: #bdbdbd;
+  stroke: none;
+}
+
+.node .null rect {
+  fill: none;
+  stroke: none;
+}
+
+.node .null text {
+  fill: #636363;
+}
+
+.node .function rect {
+  stroke: #3182bd;
+}
+
+.node .selection rect {
+  stroke: #e6550d;
+}
+
+.node .data rect {
+  fill: #d9d9d9;
+  stroke: none;
+}
+
+.node .code text {
+  font-family: monospace;
+}
+
+.node .key rect {
+  fill: #a1d99b;
+  stroke: none;
+}
+
+.link .to-data {
+  stroke: #ddd;
+}
+
+.link .to-element {
+  stroke: #bdbdbd;
+}
+
+.link .to-key,
+.join {
+  stroke: #a1d99b;
+}
+
+.join {
+  stroke-dasharray: 2,2;
+}
+
+.link .to-null {
+  stroke-opacity: .5;
+  stroke-dasharray: .5,3.5;
+  stroke-linecap: round;
+}
+
+.play circle {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 3px;
+}
+
+.play:hover path {
+  fill: red;
+}
+
+.play rect {
+  fill: none;
+  pointer-events: all;
+  cursor: pointer;
+}
+</style>
+<script src=index_page/test.js></script> -->
+<div id='bar-figure'></div>
+<script src=index_page/barchart.js></script>
+
+
+<!--//%%%%%%%%%%%%%%%%%%%%% MAIN %%%%%%%%%%%%%%-->
+                                    
+                                    <!-- <div class="job_bar">
+                                    <svg width="560" height="500" id="svg"></svg>           
+                                    <script src=index_page/job_bar.js></script>
+                                    </div>
+ -->
+                                    <!-- <div class="marital_bar">
+                                    <script src="https://d3js.org/d3.v4.min.js"></script>
+                                    <svg width="560" height="200" id="svg"></svg>           
+                                    <script src=index_page/job_bar.js></script>
+                                    </div>
+                     -->
+                    
+<!--//%%%%%%%%%%%%%%%%%%%%% MAIN %%%%%%%%%%%%%%-->                                  
+<!--//s###################################################################################-->
+<!--//s###################################################################################-->                                           
+                                     <!--footer section start-->
+                                        <footer>
+                                           <p>&copy 2018 . All Rights Reserved | Imeilia Santoso</a></p>
+                                        </footer>
+                                    <!--footer section end-->
+                                </div>
+                            </div>
+                <!--//content-inner-->
+            <!--/sidebar-menu-->
+                <div class="sidebar-menu">
+                    <header class="logo">
+                    <a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="index.html"> <span id="logo"> <h1>Admin</h1></span> 
+                    <!--<img id="logo" src="" alt="Logo"/>--> 
+                  </a> 
+                </header>
+            <div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
+            <!--/down-->
+                            <div class="down">  
+                                      <a href="index.html"><img src="images/admin.jpg"></a>
+                                      <a href="index.html"><span class=" name-caret">Administrator</span></a>
+                                     <p>Marketing Department</p>
+                                    
+                                    </div>
+                               <!--//down-->
+                           <div class="menu">
+                                    <ul id="menu" >
+                                        <li><a href="index.html"><i class="fa fa-tachometer"></i> <span>Dashboard</span></a></li>
+                                        
+                                         <li id="menu-academico" ><a href="register_page/register.html"><i class="fa fa-file-text-o"></i> 
+                                            <span>Register New Client</span></a>    
+                                         </li>
+
+
+                                    <li><a href="predict_page/predict.html"><i class="lnr lnr-chart-bars"></i> <span>Prediction</span> <span class="fa fa-angle-right" style="float: right"></span></a>
+                                      <ul>
+                                        <li><a href="predict_page/predict.html"><i class="lnr lnr-map"></i>Profile</a></li>
+                                        <li><a href="predict_page/predict2.html"><i class="lnr lnr-apartment"></i>Feature</a></li>
+                                    </ul>
+                                    </li>
+                                    <li id="menu-comunicacao" ><a href="../learn_page/learn.html"><i class="fa fa-smile-o"></i> <span>Learn More</span></a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="clearfix"></div>      
+                            </div>
+                            <script>
+                            var toggle = true;
+                                        
+                            $(".sidebar-icon").click(function() {                
+                              if (toggle)
+                              {
+                                $(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+                                $("#menu span").css({"position":"absolute"});
+                              }
+                              else
+                              {
+                                $(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+                                setTimeout(function() {
+                                  $("#menu span").css({"position":"relative"});
+                                }, 400);
+                              }
+                                            
+                                            toggle = !toggle;
+                                        });
+                            </script>
+<!--js -->
+
+<!-- Bootstrap Core JavaScript -->
+   <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

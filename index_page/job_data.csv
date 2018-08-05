@@ -1,0 +1,5 @@
+State,Emplyoeed,Unempyoeed,Unknown
+Less than 25 years,896,438,2
+26 to 50 years,32769,1680,171
+51 to 64 years,32769,6649,104
+More than 65 years old,104,636,11

@@ -1,0 +1,577 @@
+     
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Bank Marketing Dataset</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="../css/style.css" rel='stylesheet' type='text/css' />
+<!-- Graph C../SS -->
+<link href="../css/font-awesome.css" rel="stylesheet"> 
+<!-- jQuery -->
+<link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css'>
+<!-- lined-icons -->
+<link rel="stylesheet" href="../css/icon-font.min.css" type='text/css' />
+<!-- //lined-icons -->
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+
+<!--//skycons-icons-->
+</head> 
+<body>
+   <div class="page-container">
+   <!--/content-inner-->
+  <div class="left-content">
+     <div class="inner-content">
+    <!-- header-starts -->
+      <div class="header-section">
+
+          <div class="clearfix"></div>
+        </div>
+          <!-- //header-ends -->
+            <div class="outter-wp">
+                <!--custom-widgets-->
+                        <div class="custom-widgets">
+                         <div class="row-one">
+                          <div class="col-md-3 widget">
+                            <div class="stats-left ">
+                              <h5>Original Accuracy</h5>
+                              <label id="result2">90.3</label>
+                            </div>
+                          </div>
+                          <div class="col-md-3 widget states-mdl">
+                            <div class="stats-left">
+                              <h5>Accuracy Rate</h5>
+                              <label id="result"> 85</label>
+                            </div>
+                          </div>
+                          <div class="col-md-3 widget states-thrd">
+                            <div class="stats-left">
+                              <h5>Applied Algortihms</h5>
+                              <label>J48</label>
+                            </div>
+                            <div class="clearfix"> </div> 
+                          </div>
+                          
+                          <div class="clearfix"> </div> 
+                        </div>
+                      </div>
+                        <!--//custom-widgets-->
+
+          <!--######################################### main data-->
+        <div>
+          <div class="pageCont">
+          <div class="wrap">
+            <header class="pageCont_header">
+              <h1>New Client Data</h1>
+              <p>Add New the Trainnning Data</p>
+            </header>
+
+            <section class="pageCont_main">
+                  <h2>User Profile </h2>
+                  <p class="formTitle">Name : </p><input id="name" type="text" name="name" value="Imeila Santoso"><br> <br>
+                  <p class="formTitle">Age  : </p><input id="age" type="text" name="age" value="29" ><br> <br>
+
+                  <form name="form1">
+                  <p class="formTitle">Job :</p>
+                    <label><input id="Radio1" type="radio" name="Radio1" checked="checked">Emplyoed</label>
+                    <label><input id="Radio2" type="radio" name="Radio1">Unemplyoed</label>
+                    <label><input id="Radio3" type="radio" name="Radio1">Unknown</label><br><br>
+                  </form>
+
+                  <form name="form2">
+                  <p class="formTitle">Marital :</p>
+                    <label><input id="Radio1" type="radio" name="Radio1" checked="checked">Married</label>
+                    <label><input id="Radio2" type="radio" name="Radio1">Unmarried</label>
+                    <label><input id="Radio3" type="radio" name="Radio1">Unknown</label><br><br>
+                  </form>
+
+                  <form name="form3">
+                  <p class="formTitle">Education :</p>
+                    <label><input id="Radio1" type="radio" name="Radio1" checked="checked">Primary</label>
+                    <label><input id="Radio2" type="radio" name="Radio1">Secondary</label>
+                    <label><input id="Radio3" type="radio" name="Radio1">Teritory</label>
+                    <label><input id="Radio4" type="radio" name="Radio1">Unknown</label><br><br>
+                  </form>
+
+                  <form name="form4">
+                  <p class="formTitle">Contact:</p>
+                    <label><input id="Radio1" type="radio" name="Radio1" checked="checked">Telephone</label>
+                    <label><input id="Radio2" type="radio" name="Radio1">Cellular</label>
+                    <label><input id="Radio2" type="radio" name="Radio1">Unknown</label><br><br>
+                  </form>
+
+                  <!-- was form 5 -->
+                  <p class="formTitle">Balance: </p><input id="balance" type="text" name="balace" value="300" > in Euro <br> <br>
+                   
+
+                  <form name="form6">
+                  <p class="formTitle">Housing:</p>
+                    <label><input id="Radio1" type="radio" name="Radio1" checked="checked">Yes</label>
+                    <label><input id="Radio2" type="radio" name="Radio1">No</label><br><br>
+                  </form>
+
+                  <form name="form7">
+                  <p class="formTitle">Loan:</p>
+                    <label><input id="Radio1" type="radio" name="Radio1" checked="checked">Yes</label>
+                    <label><input id="Radio2" type="radio" name="Radio1">No</label><br><br>
+                  </form>
+
+                  <form name="form8">
+                  <p class="formTitle">Deafult:</p>
+                    <label><input id="Radio1" type="radio" name="Radio1" checked="checked">Yes</label>
+                    <label><input id="Radio2" type="radio" name="Radio1">No</label><br><br>
+                  </form>
+
+                  <h2>Previous Campaign Result</h2>
+
+                  <p class="formTitle">Duration  : </p><input id="duration" type="text" name="duration" value="30" ><br><br>
+
+                  <p class="formTitle">Day : </p><input id="day" type="text" name="day" value="1"><br><br>
+
+                  <p class="formTitle">Month  : </p><input id="month" type="text" name="month" value="mar"><br><br>
+
+                  <p class="formTitle">Campaign  : </p><input id="campaign" type="text" name="campaign" value="10" ><br><br>
+
+                  <p class="formTitle">Previous Days  : </p><input id="pdays" type="text" name="pdays" value="10" ><br>
+
+                  <p class="formTitle">Previous Contacts  : </p><input id="previous" type="text" name="previous" value="10" ><br>
+
+
+                  <form name="form12">
+                  <p class="formTitle">Previous Outcome:</p>
+                    <label><input id="Radio1" type="radio" name="Radio1" checked="checked">Sucess</label>
+                    <label><input id="Radio2" type="radio" name="Radio1">Failure</label>
+                    <label><input id="Radio3" type="radio" name="Radio1">Other</label>
+                    <label><input id="Radio4" type="radio" name="Radio1">Unknown</label><br><br>
+                  </form>
+
+                  <h2>Current Result</h2>
+                  <form name="form13">
+                  <p class="formTitle">Result:</p>
+                    <label><input id="Radio1" type="radio" name="Radio1" checked="checked">Yes</label>
+                    <label><input id="Radio2" type="radio" name="Radio1">No</label>
+                    <label><input id="Radio3" type="radio" name="Radio1">Unknown</label><br><br>
+                  </form>
+
+
+                  <button onclick="sendData()">
+                    Register
+                  </button>
+                  <div>
+                  <!-- Result Here! -->
+              <!--     <p id="result"></p>
+                  <p id="result2"></p> -->
+                  </div>
+
+                </section>
+              </div>
+            </div>
+
+
+                  <script>
+                  function sendData(){
+
+                  var name = document.getElementById("name").value
+                  var age = document.getElementById("age").value
+                  var duration = document.getElementById("duration").value
+                  var balance = document.getElementById("balance").value
+                  var day = document.getElementById("day").value
+                  var month = document.getElementById("month").value
+                  var campaign = document.getElementById("campaign").value
+                  var pdays = document.getElementById("pdays").value
+                  var previous = document.getElementById("previous").value
+
+
+
+
+                  // Job
+                  if (document.form1.Radio1[0].checked) {
+                    radio1_job = "Emplyoed";
+                    radio2_job = "False";
+                    radio3_job = "False";
+                  } else {
+                    radio1_job = "False";
+                  }
+
+                  if (document.form1.Radio1[1].checked) {
+                    radio2_job = "Unemplyoed";
+                    radio3_job = "False" 
+                    radio1_job = "False"
+                  } else {
+                    radio2_job = "False";
+                  }
+
+
+                  if (document.form1.Radio1[2].checked) {
+                    radio3_job = "Unknown";
+                    radio1_job = "False";
+                    radio2_job = "False" 
+                  } else {
+                    radio3_job = "False";
+                  }
+
+                  ////////////////// // radio for status
+                  if (document.form2.Radio1[0].checked) {
+                    radio1_status = "Married";
+                    radio2_status = "False";
+                    radio3_status = "False";
+                  } else {
+                    radio1_status = "False";
+                  }
+
+                  if (document.form2.Radio1[1].checked) {
+                    radio2_status = "Unmarried";
+                    radio3_status = "False" 
+                    radio1_status = "False"
+                  } else {
+                    radio2_status = "False";
+                  }
+
+
+                  if (document.form2.Radio1[2].checked) {
+                    radio3_status = "Unknown";
+                    radio1_status = "False";
+                    radio2_status = "False" 
+                  } else {
+                    radio3_status = "False";
+                  }
+
+
+                  ////////////////// // radio for education
+                  if (document.form3.Radio1[0].checked) {
+                    radio1_edu = "Primary";
+                    radio2_edu = "False";
+                    radio3_edu = "False";
+                    radio4_edu = "False";
+                  } else {
+                    radio1_edu = "False";
+                  }
+
+                  if (document.form3.Radio1[1].checked) {
+                    radio2_edu = "Secondary";
+                    radio3_edu = "False"
+                    radio4_edu = "False";
+                    radio1_edu = "False"
+                  } else {
+                    radio2_status = "False";
+                  }
+
+
+                  if (document.form3.Radio1[2].checked) {
+                    radio3_edu = "Teritory";
+                    radio4_edu = "False";
+                    radio1_edu = "False";
+                    radio2_edu = "False" 
+                  } else {
+                    radio3_edu = "False";
+                  }
+
+                  if (document.form3.Radio1[3].checked) {
+                    radio4_edu = "Unknown";
+                    radio1_edu = "False";
+                    radio3_edu = "False";
+                    radio2_edu = "False"
+                  } else {
+                    radio4_edu = "False";
+                  }
+
+
+
+                  // radio for contact
+                  if (document.form4.Radio1[0].checked) {
+                    radio1_contact = "Telephone";
+                    radio2_contact = "False";
+                    radio3_contact = "False";
+                  } else {
+                    radio1_contact = "False";
+                  }
+
+                  if (document.form4.Radio1[1].checked) {
+                    radio2_contact = "Cellular";
+                    radio3_contact = "False" 
+                    radio1_contact = "False"
+                  } else {
+                    radio2_contact = "False";
+                  }
+
+                  if (document.form4.Radio1[2].checked) {
+                    radio3_contact = "Unknown";
+                    radio1_contact = "False";
+                    radio2_contact = "False" 
+                  } else {
+                    radio3_contact = "False";
+                  }
+
+
+                  ////////////////// // radio for Housing
+                  if (document.form6.Radio1[0].checked) {
+                    radio1_hs = "Yes";
+                    radio2_hs = "False";
+                  } else {
+                    radio1_hs = "False";
+                  }
+
+                  if (document.form6.Radio1[1].checked) {
+                    radio2_hs = "No";
+                    radio1_hs = "False"
+                  } else {
+                    radio2_hs = "False";
+                  }
+
+
+                  ////////////////// // radio for Loan
+                  if (document.form7.Radio1[0].checked) {
+                    radio1_loan = "Yes";
+                    radio2_loan = "False";
+                  } else {
+                    radio1_loan = "False";
+                  }
+
+                  if (document.form7.Radio1[1].checked) {
+                    radio2_loan = "No";
+                    radio1_loan = "False"
+                  } else {
+                    radio2_loan = "False";
+                  }
+
+
+                  ////////////////// // radio for default
+                  if (document.form8.Radio1[0].checked) {
+                    radio1_def = "Yes";
+                    radio2_def = "False";
+                  } else {
+                    radio1_def = "False";
+                  }
+
+                  if (document.form8.Radio1[1].checked) {
+                    radio2_def = "No";
+                    radio1_def = "False"
+                  } else {
+                    radio2_def = "False";
+                  }
+
+
+                  if (document.form12.Radio1[0].checked) {
+                    radio1_pout = "Success";
+                    radio2_pout = "False";
+                    radio3_pout = "False";
+                    radio4_pout = "False";
+                  } else {
+                    radio1_edu = "False";
+                  }
+
+                  if (document.form12.Radio1[1].checked) {
+                    radio2_pout = "Failure";
+                    radio3_pout = "False"
+                    radio4_pout = "False";
+                    radio1_pout = "False"
+                  } else {
+                    radio2_pout = "False";
+                  }
+
+                  if (document.form12.Radio1[2].checked) {
+                    radio3_pout = "Other";
+                    radio4_pout = "False";
+                    radio1_pout = "False";
+                    radio2_pout = "False" 
+                  } else {
+                    radio3_pout = "False";
+                  }
+
+                  if (document.form12.Radio1[3].checked) {
+                    radio4_pout = "Unknown";
+                    radio1_pout = "False";
+                    radio3_pout = "False";
+                    radio2_pout = "False"
+                  } else {
+                    radio4_pout = "False";
+                  }
+
+                  ////////////////// // radio for current result
+                  if (document.form13.Radio1[0].checked) {
+                    radio1_y = "Yes";
+                    radio2_y = "False";
+                    radio3_y = "False";
+                  } else {
+                    radio1_y = "False";
+                  }
+
+                  if (document.form13.Radio1[1].checked) {
+                    radio2_y = "No";
+                    radio3_y = "False" 
+                    radio1_y = "False"
+                  } else {
+                    radio2_y = "False";
+                  }
+
+                  if (document.form13.Radio1[2].checked) {
+                    radio3_y = "Unknown";
+                    radio1_y = "False";
+                    radio2_y = "False" 
+                  } else {
+                    radio3_y = "False";
+                  }
+
+
+
+                  $.ajax({
+                      type: "POST",
+                      url: "/cgi-bin/pre1_register.py",
+                      data: { name:JSON.stringify(name),
+                      age:JSON.stringify(age),
+                      duration:JSON.stringify(duration),
+                      day:JSON.stringify(day),
+                      month:JSON.stringify(month),
+                      campaign:JSON.stringify(campaign),
+                      radio1_job:JSON.stringify(radio1_job),
+                      radio2_job:JSON.stringify(radio2_job),
+                      radio3_job:JSON.stringify(radio3_job),
+                      radio1_status:JSON.stringify(radio1_status),
+                      radio2_status:JSON.stringify(radio2_status),
+                      radio3_status:JSON.stringify(radio3_status),
+                      radio1_edu:JSON.stringify(radio1_edu),
+                      radio2_edu:JSON.stringify(radio2_edu),
+                      radio3_edu:JSON.stringify(radio3_edu),
+                      radio4_edu:JSON.stringify(radio4_edu),
+                      radio1_contact:JSON.stringify(radio1_contact),
+                      radio2_contact:JSON.stringify(radio2_contact),
+                      radio3_contact:JSON.stringify(radio3_contact),
+                      balance:JSON.stringify(balance),
+                      radio1_hs:JSON.stringify(radio1_hs),
+                      radio2_hs:JSON.stringify(radio2_hs),
+                      radio1_loan:JSON.stringify(radio1_loan),
+                      radio2_loan:JSON.stringify(radio2_loan),
+                      radio1_def:JSON.stringify(radio1_def),
+                      radio2_def:JSON.stringify(radio2_def),
+                      pdays:JSON.stringify(pdays),
+                      previous:JSON.stringify(previous),
+                      radio1_pout:JSON.stringify(radio1_pout),
+                      radio2_pout:JSON.stringify(radio2_pout),
+                      radio3_pout:JSON.stringify(radio3_pout),
+                      radio4_pout:JSON.stringify(radio4_pout),
+                      radio1_y:JSON.stringify(radio1_y),
+                      radio2_y:JSON.stringify(radio2_y),
+                      radio3_y:JSON.stringify(radio3_y)},
+                      async: true,        
+                      success: function( msg ) {
+                      
+                      var status = msg['status'];
+
+                      console.log("tws")
+                      console.log(status)
+
+                      if (status == "yes") {
+                        //var Result_Accuracy = "After registering new data, the total accuracy " + msg['Result_Accuracy'];
+                        //var Result_Accuracy_Original = "The original accuracy is " + msg['Result_Accuracy_Original'];
+                        var Result_Accuracy = msg['Result_Accuracy'];
+                        var Result_Accuracy_Original = msg['Result_Accuracy_Original'];
+
+                        document.getElementById("result").innerHTML = Result_Accuracy
+                        document.getElementById("result2").innerHTML = Result_Accuracy_Original
+
+                         // showTree();
+                      }
+                      else {
+                        errorMessage = "result_"
+                        errorMessage += msg['except']
+                        alert(errorMessage);
+                      }  
+                      },
+                      error: function(msg){     
+                      alert("Error sending data!");
+                      }
+                    }); 
+                  }
+
+                  </script>
+
+        </div>
+
+
+        <!--######################################### main data-->
+                   <!--footer section start-->
+                    <footer>
+                       <p>&copy 2018 . All Rights Reserved | Design by Imeilia Santoso</a></p>
+                    </footer>
+                  <!--footer section end-->
+                </div>
+              </div>
+        <!--//content-inner-->
+      <!--/sidebar-menu-->
+        <div class="sidebar-menu">
+          <header class="logo">
+          <a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="index.html"> <span id="logo"> <h1>Admin</h1></span> 
+          <!--<img id="logo" src="" alt="Logo"/>--> 
+          </a> 
+        </header>
+      <div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
+      <!--/down-->
+              <div class="down">  
+                    <a href=""><img src="../../images/admin.jpg"></a>
+                    <a href=""><span class=" name-caret">Administrator</span></a>
+                   <p>Marketing Department</p>
+                  
+                  </div>
+                 <!--//down-->
+                           <div class="menu">
+                  <ul id="menu" >
+                    <li><a href="../index.html"><i class="fa fa-tachometer"></i> <span>Dashboard</span></a></li>
+                    
+                     <li id="menu-academico" ><a href="register_page/register.html"><i class="fa fa-file-text-o"></i> 
+                      <span>Register New Client</span></a>  
+                     </li>
+
+
+                  <li><a href="../predict_page/predict.html"><i class="lnr lnr-chart-bars"></i> <span>Prediction</span> <span class="fa fa-angle-right" style="float: right"></span></a>
+                    <ul>
+                    <li><a href="../predict_page/predict.html"><i class="lnr lnr-map"></i>Profile</a></li>
+                    <li><a href="../predict_page/predict2.html"><i class="lnr lnr-apartment"></i>Feature</a></li>
+                  </ul>
+                  </li>
+                  <li id="menu-comunicacao" ><a href="../learn_page/learn.html"><i class="fa fa-smile-o"></i> <span>Learn More</span></a>
+                  </li>
+                  </ul>
+                </div>
+                </div>
+                <div class="clearfix"></div>    
+              </div>
+              <script>
+              var toggle = true;
+                    
+              $(".sidebar-icon").click(function() {                
+                if (toggle)
+                {
+                $(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+                $("#menu span").css({"position":"absolute"});
+                }
+                else
+                {
+                $(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+                setTimeout(function() {
+                  $("#menu span").css({"position":"relative"});
+                }, 400);
+                }
+                      
+                      toggle = !toggle;
+                    });
+              </script>
+<!--js -->
+
+<!-- Bootstrap Core JavaScript -->
+   <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

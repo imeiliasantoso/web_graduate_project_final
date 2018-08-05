@@ -1,0 +1,465 @@
+     
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Bank Marketing Dataset</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="../css/style.css" rel='stylesheet' type='text/css' />
+<!-- Graph C../SS -->
+<link href="../css/font-awesome.css" rel="stylesheet"> 
+<!-- jQuery -->
+<link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css'>
+<!-- lined-icons -->
+<link rel="stylesheet" href="../css/icon-font.min.css" type='text/css' />
+<!-- //lined-icons -->
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+
+<!--//skycons-icons-->
+</head> 
+<body>
+   <div class="page-container">
+   <!--/content-inner-->
+  <div class="left-content">
+     <div class="inner-content">
+    <!-- header-starts -->
+      <div class="header-section">
+
+          <div class="clearfix"></div>
+        </div>
+          <!-- //header-ends -->
+            <div class="outter-wp">
+                <!--custom-widgets-->
+                <div class="custom-widgets">
+                   <div class="row-one">
+                    <div class="col-md-3 widget">
+                      <div class="stats-left ">
+                        <h5>Original Accuracy</h5>
+                        <label>90.3</label>
+                      </div>
+                    </div>
+                    <div class="col-md-3 widget states-mdl">
+                      <div class="stats-left">
+                        <h5>Current Accuracy</h5>
+                        <label id="result2">90</label>
+                      </div>
+                    </div>
+                    <div class="col-md-3 widget states-thrd">
+                      <div class="stats-left">
+                        <h5>Customer Prediction</h5>
+                        <label id="result">Subscribe or Not Subscribe</label>
+                      </div>
+                      <div class="clearfix"> </div> 
+                    </div>
+                    
+                    <div class="clearfix"> </div> 
+                  </div>
+                </div>
+                        <!--//custom-widgets-->
+
+          <!--######################################### main data-->
+        <div>
+          <div class="pageCont">
+          <div class="wrap">
+            <header class="pageCont_header">
+              <h1> Predict Potential Client Result </h1>
+              <p>Client Previous Campagign Based Prediction </p>
+            </header>
+
+            <section class="pageCont_main">
+
+
+<p class="formTitle">Age  :</p>
+<input id="age" type="text" name="age" value="29" ><br> <br>
+
+<form name="form1">
+<p class="formTitle">Job :</p>
+  <label><input id="Radio1" type="radio" name="Radio1" checked="checked">Emplyoed</label>
+  <label><input id="Radio2" type="radio" name="Radio1">Unemplyoed</label>
+  <label><input id="Radio3" type="radio" name="Radio1">Unknown</label><br> <br>
+</form>
+
+<form name="form2">
+<p class="formTitle">Marital :</p>
+  <label><input id="Radio1" type="radio" name="Radio1" checked="checked">Married</label>
+  <label><input id="Radio2" type="radio" name="Radio1">Unmarried</label>
+  <label><input id="Radio3" type="radio" name="Radio1">Unknown</label><br> <br>
+</form>
+
+<form name="form3">
+<p class="formTitle">Education :</p>
+  <label><input id="Radio1" type="radio" name="Radio1" checked="checked">Primary</label>
+  <label><input id="Radio2" type="radio" name="Radio1">Secondary</label>
+  <label><input id="Radio3" type="radio" name="Radio1">Teritory</label>
+  <label><input id="Radio4" type="radio" name="Radio1">Unknown</label><br> <br>
+</form>
+
+<form name="form4">
+<p class="formTitle">Contact:</p>
+  <label><input id="Radio1" type="radio" name="Radio1" checked="checked">Telephone</label>
+  <label><input id="Radio2" type="radio" name="Radio1">Cellular</label>
+  <label><input id="Radio2" type="radio" name="Radio1">Unknown</label><br> <br>
+</form>
+
+
+<p class="formTitle">Balance: </p><input id="balance" type="text" name="balace" value="300" > in Euro<br> <br>
+ 
+
+<form name="form6">
+<p class="formTitle">Housing:</p>
+  <label><input id="Radio1" type="radio" name="Radio1" checked="checked">Yes</label>
+  <label><input id="Radio2" type="radio" name="Radio1">No</label><br> <br>
+</form>
+
+<form name="form7">
+<p class="formTitle">Loan:</p>
+  <label><input id="Radio1" type="radio" name="Radio1" checked="checked">Yes</label>
+  <label><input id="Radio2" type="radio" name="Radio1">No</label><br> <br>
+</form>
+
+
+<button onclick="sendData()">
+  Evaluation
+</button>
+
+            </section>
+
+<div>
+<p id="result"></p>
+<p id="result2"></p>
+</div>
+
+</div>
+</div>
+
+<script>
+function sendData(){
+var age = document.getElementById("age").value
+var balance = document.getElementById("balance").value
+// Job
+if (document.form1.Radio1[0].checked) {
+  radio1_job = "Emplyoed";
+  radio2_job = "False";
+  radio3_job = "False";
+} else {
+  radio1_job = "False";
+}
+
+if (document.form1.Radio1[1].checked) {
+  radio2_job = "Unemplyoed";
+  radio3_job = "False" 
+  radio1_job = "False"
+} else {
+  radio2_job = "False";
+}
+
+
+if (document.form1.Radio1[2].checked) {
+  radio3_job = "Unknown";
+  radio1_job = "False";
+  radio2_job = "False" 
+} else {
+  radio3_job = "False";
+}
+
+////////////////// // radio for status
+if (document.form2.Radio1[0].checked) {
+  radio1_status = "Married";
+  radio2_status = "False";
+  radio3_status = "False";
+} else {
+  radio1_status = "False";
+}
+
+if (document.form2.Radio1[1].checked) {
+  radio2_status = "Unmarried";
+  radio3_status = "False" 
+  radio1_status = "False"
+} else {
+  radio2_status = "False";
+}
+
+
+if (document.form2.Radio1[2].checked) {
+  radio3_status = "Unknown";
+  radio1_status = "False";
+  radio2_status = "False" 
+} else {
+  radio3_status = "False";
+}
+
+
+////////////////// // radio for education
+if (document.form3.Radio1[0].checked) {
+  radio1_edu = "Primary";
+  radio2_edu = "False";
+  radio3_edu = "False";
+  radio4_edu = "False";
+} else {
+  radio1_edu = "False";
+}
+
+if (document.form3.Radio1[1].checked) {
+  radio2_edu = "Secondary";
+  radio3_edu = "False"
+  radio4_edu = "False";
+  radio1_edu = "False"
+} else {
+  radio2_edu = "False";
+}
+
+
+if (document.form3.Radio1[2].checked) {
+  radio3_edu = "Teritory";
+  radio4_edu = "False";
+  radio1_edu = "False";
+  radio2_edu = "False" 
+} else {
+  radio3_edu = "False";
+}
+
+if (document.form3.Radio1[3].checked) {
+  radio4_edu = "Unknown";
+  radio1_edu = "False";
+  radio3_edu = "False";
+  radio2_edu = "False"
+} else {
+  radio4_edu = "False";
+}
+
+
+
+// radio for contact
+if (document.form4.Radio1[0].checked) {
+  radio1_contact = "Telephone";
+  radio2_contact = "False";
+  radio3_contact = "False";
+} else {
+  radio1_contact = "False";
+}
+
+if (document.form4.Radio1[1].checked) {
+  radio2_contact = "Cellular";
+  radio3_contact = "False" 
+  radio1_contact = "False"
+} else {
+  radio2_contact = "False";
+}
+
+if (document.form4.Radio1[2].checked) {
+  radio3_contact = "Unknown";
+  radio1_contact = "False";
+  radio2_contact = "False" 
+} else {
+  radio3_contact = "False";
+}
+
+
+
+////////////////// // radio for Housing
+if (document.form6.Radio1[0].checked) {
+  radio1_hs = "Yes";
+  radio2_hs = "False";
+} else {
+  radio1_hs = "False";
+}
+
+if (document.form6.Radio1[1].checked) {
+  radio2_hs = "No";
+  radio1_hs = "False"
+} else {
+  radio2_hs = "False";
+}
+
+
+////////////////// // radio for Loan
+if (document.form7.Radio1[0].checked) {
+  radio1_loan = "Yes";
+  radio2_loan = "False";
+} else {
+  radio1_loan = "False";
+}
+
+if (document.form7.Radio1[1].checked) {
+  radio2_loan = "No";
+  radio1_loan = "False"
+} else {
+  radio2_loan = "False";
+}
+
+
+
+$.ajax({
+    type: "POST",
+    url: "/cgi-bin/pre1_predict.py",
+    data: { age:JSON.stringify(age),
+    radio1_job:JSON.stringify(radio1_job),
+    radio2_job:JSON.stringify(radio2_job),
+    radio3_job:JSON.stringify(radio3_job),
+    radio1_status:JSON.stringify(radio1_status),
+    radio2_status:JSON.stringify(radio2_status),
+    radio3_status:JSON.stringify(radio3_status),
+    radio1_edu:JSON.stringify(radio1_edu),
+    radio2_edu:JSON.stringify(radio2_edu),
+    radio3_edu:JSON.stringify(radio3_edu),
+    radio4_edu:JSON.stringify(radio4_edu),
+    radio1_contact:JSON.stringify(radio1_contact),
+    radio2_contact:JSON.stringify(radio2_contact),
+    radio3_contact:JSON.stringify(radio3_contact),
+    balance:JSON.stringify(balance),
+    radio1_hs:JSON.stringify(radio1_hs),
+    radio2_hs:JSON.stringify(radio2_hs),
+    radio1_loan:JSON.stringify(radio1_loan),
+    radio2_loan:JSON.stringify(radio2_loan)},
+
+    async: true,        
+    success: function( msg ) {
+    
+    var status = msg['status'];
+
+    console.log("tws")
+    console.log(status)
+
+    if (status == "yes") {
+      var Result_Name = "Analysis from previous dataset the Client might " + msg['Result_Name'];
+     // var Result_Accuracy = "The Accuracy is " + msg['Result_Accuracy'] + "%"; 
+      var Result_Accuracy = msg['Result_Accuracy']; 
+
+      document.getElementById("result").innerHTML = Result_Name
+       document.getElementById("result2").innerHTML = Result_Accuracy
+    }
+    else {
+      errorMessage = "result_"
+      errorMessage += msg['except']
+      alert(errorMessage);
+    }  
+    },
+    error: function(msg){     
+    alert("Error sending data!");
+    }
+  }); 
+}
+
+</script>
+
+
+<style>
+  .nodeRect {
+    stroke: white;
+    stroke-width: 2px;
+  }
+  
+  .nodeName {
+    fill: white;
+    font-size: 12px;
+    font-family: simsun;
+  }
+
+  .node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node {
+  font: 10px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+  </style>
+
+        </div>
+
+
+        <!--######################################### main data-->
+                   <!--footer section start-->
+                    <footer>
+                       <p>&copy 2018 . All Rights Reserved | Design by Imeilia Santoso</a></p>
+                    </footer>
+                  <!--footer section end-->
+                </div>
+              </div>
+        <!--//content-inner-->
+      <!--/sidebar-menu-->
+        <div class="sidebar-menu">
+          <header class="logo">
+          <a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="index.html"> <span id="logo"> <h1>Admin</h1></span> 
+          <!--<img id="logo" src="" alt="Logo"/>--> 
+          </a> 
+        </header>
+      <div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
+      <!--/down-->
+              <div class="down">  
+                    <a href=""><img src="../../images/admin.jpg"></a>
+                    <a href=""><span class=" name-caret">Administrator</span></a>
+                   <p>Marketing Department</p>
+                  
+                  </div>
+                 <!--//down-->
+                           <div class="menu">
+                  <ul id="menu" >
+                    <li><a href="../index.html"><i class="fa fa-tachometer"></i> <span>Dashboard</span></a></li>
+                    
+                     <li id="menu-academico" ><a href="../register_page/register.html"><i class="fa fa-file-text-o"></i> 
+                      <span>Register New Client</span></a>  
+                     </li>
+
+
+                  <li><a href="predict.html"><i class="lnr lnr-chart-bars"></i> <span>Prediction</span> <span class="fa fa-angle-right" style="float: right"></span></a>
+                    <ul>
+                    <li><a href="predict.html"><i class="lnr lnr-map"></i>Profile</a></li>
+                    <li><a href="predict2.html"><i class="lnr lnr-apartment"></i>Feature</a></li>
+                  </ul>
+                  </li>
+                  <li id="menu-comunicacao" ><a href="../../learn_page/learn.html"><i class="fa fa-smile-o"></i> <span>Learn More</span></a>
+                  </li>
+                  </ul>
+                </div>
+                </div>
+                <div class="clearfix"></div>    
+              </div>
+              <script>
+              var toggle = true;
+                    
+              $(".sidebar-icon").click(function() {                
+                if (toggle)
+                {
+                $(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+                $("#menu span").css({"position":"absolute"});
+                }
+                else
+                {
+                $(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+                setTimeout(function() {
+                  $("#menu span").css({"position":"relative"});
+                }, 400);
+                }
+                      
+                      toggle = !toggle;
+                    });
+              </script>
+<!--js -->
+
+<!-- Bootstrap Core JavaScript -->
+   <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+J48 pruned tree
+------------------
+
+duration <= 206
+|   poutcome = unknown
+|   |   month = may: no (941.0/23.0)
+|   |   month = jun: no (483.0/56.0)
+|   |   month = jul: no (547.0/18.0)
+|   |   month = aug: no (579.0/37.0)
+|   |   month = oct
+|   |   |   duration <= 76: no (9.0/1.0)
+|   |   |   duration > 76: yes (70.0/14.0)
+|   |   month = nov: no (278.0/33.0)
+|   |   month = dec: yes (5.0/2.0)
+|   |   month = jan: no (91.0/12.0)
+|   |   month = feb: no (202.0/80.0)
+|   |   month = mar
+|   |   |   duration <= 78: no (5.0/1.0)
+|   |   |   duration > 78: yes (77.0/10.0)
+|   |   month = apr
+|   |   |   duration <= 96: no (43.0/6.0)
+|   |   |   duration > 96: yes (148.0/56.0)
+|   |   month = sep
+|   |   |   duration <= 79: no (7.0)
+|   |   |   duration > 79
+|   |   |   |   duration <= 183
+|   |   |   |   |   duration <= 110: yes (4.0)
+|   |   |   |   |   duration > 110: no (16.0/7.0)
+|   |   |   |   duration > 183: yes (8.0)
+|   poutcome = other
+|   |   month = may: no (49.0/5.0)
+|   |   month = jun
+|   |   |   duration <= 112: no (3.0/1.0)
+|   |   |   duration > 112: yes (5.0)
+|   |   month = jul
+|   |   |   duration <= 113: no (3.0/1.0)
+|   |   |   duration > 113: yes (6.0)
+|   |   month = aug
+|   |   |   duration <= 156: no (7.0/1.0)
+|   |   |   duration > 156: yes (8.0)
+|   |   month = oct
+|   |   |   duration <= 126: no (2.0)
+|   |   |   duration > 126: yes (4.0/1.0)
+|   |   month = nov: no (18.0/2.0)
+|   |   month = dec: no (3.0/1.0)
+|   |   month = jan: no (24.0/5.0)
+|   |   month = feb: no (34.0/9.0)
+|   |   month = mar
+|   |   |   duration <= 121: no (2.0)
+|   |   |   duration > 121: yes (6.0/2.0)
+|   |   month = apr
+|   |   |   duration <= 178
+|   |   |   |   previous <= 5: no (13.0/1.0)
+|   |   |   |   previous > 5: yes (3.0/1.0)
+|   |   |   duration > 178: yes (2.0)
+|   |   month = sep: no (11.0/5.0)
+|   poutcome = failure
+|   |   month = may: no (147.0/7.0)
+|   |   month = jun: yes (19.0/8.0)
+|   |   month = jul
+|   |   |   duration <= 124: no (4.0)
+|   |   |   duration > 124: yes (9.0/2.0)
+|   |   month = aug
+|   |   |   duration <= 107: no (10.0/1.0)
+|   |   |   duration > 107
+|   |   |   |   previous <= 5: yes (23.0/3.0)
+|   |   |   |   previous > 5: no (4.0/1.0)
+|   |   month = oct
+|   |   |   previous <= 6
+|   |   |   |   duration <= 86: no (3.0)
+|   |   |   |   duration > 86: yes (19.0/4.0)
+|   |   |   previous > 6: no (2.0)
+|   |   month = nov: no (85.0/12.0)
+|   |   month = dec: yes (2.0/1.0)
+|   |   month = jan
+|   |   |   duration <= 158: no (20.0)
+|   |   |   duration > 158
+|   |   |   |   duration <= 190: yes (4.0/1.0)
+|   |   |   |   duration > 190: no (3.0)
+|   |   month = feb: no (72.0/18.0)
+|   |   month = mar: yes (12.0)
+|   |   month = apr
+|   |   |   duration <= 191
+|   |   |   |   previous <= 2: no (26.0)
+|   |   |   |   previous > 2
+|   |   |   |   |   duration <= 132: no (17.0/2.0)
+|   |   |   |   |   duration > 132
+|   |   |   |   |   |   duration <= 161: yes (3.0)
+|   |   |   |   |   |   duration > 161: no (5.0/2.0)
+|   |   |   duration > 191: yes (5.0/1.0)
+|   |   month = sep
+|   |   |   previous <= 1: no (3.0)
+|   |   |   previous > 1
+|   |   |   |   duration <= 139: no (3.0/1.0)
+|   |   |   |   duration > 139: yes (7.0)
+|   poutcome = success
+|   |   duration <= 119
+|   |   |   month = may: no (5.0/1.0)
+|   |   |   month = jun: yes (8.0/4.0)
+|   |   |   month = jul: yes (2.0/1.0)
+|   |   |   month = aug
+|   |   |   |   duration <= 62: no (3.0)
+|   |   |   |   duration > 62: yes (7.0/2.0)
+|   |   |   month = oct: yes (3.0/1.0)
+|   |   |   month = nov: no (13.0/6.0)
+|   |   |   month = dec: yes (1.0)
+|   |   |   month = jan: no (1.0)
+|   |   |   month = feb: yes (11.0/3.0)
+|   |   |   month = mar: yes (3.0)
+|   |   |   month = apr: no (6.0/1.0)
+|   |   |   month = sep
+|   |   |   |   duration <= 77: no (2.0)
+|   |   |   |   duration > 77: yes (9.0/1.0)
+|   |   duration > 119: yes (227.0/22.0)
+duration > 206
+|   duration <= 472
+|   |   previous <= 0
+|   |   |   month = may: no (638.0/115.0)
+|   |   |   month = jun: no (289.0/112.0)
+|   |   |   month = jul: no (342.0/95.0)
+|   |   |   month = aug
+|   |   |   |   duration <= 351: no (233.0/74.0)
+|   |   |   |   duration > 351: yes (95.0/41.0)
+|   |   |   month = oct: yes (75.0/11.0)
+|   |   |   month = nov
+|   |   |   |   duration <= 450: no (150.0/52.0)
+|   |   |   |   duration > 450: yes (9.0/1.0)
+|   |   |   month = dec: yes (33.0/3.0)
+|   |   |   month = jan
+|   |   |   |   duration <= 395: no (62.0/18.0)
+|   |   |   |   duration > 395: yes (16.0/5.0)
+|   |   |   month = feb: yes (165.0/72.0)
+|   |   |   month = mar: yes (70.0/4.0)
+|   |   |   month = apr: yes (244.0/85.0)
+|   |   |   month = sep: yes (62.0/8.0)
+|   |   previous > 0
+|   |   |   poutcome = unknown: yes (1.0)
+|   |   |   poutcome = other
+|   |   |   |   month = may: no (37.0/17.0)
+|   |   |   |   month = jun: yes (18.0/1.0)
+|   |   |   |   month = jul: yes (15.0/1.0)
+|   |   |   |   month = aug: yes (19.0/3.0)
+|   |   |   |   month = oct: yes (13.0/1.0)
+|   |   |   |   month = nov
+|   |   |   |   |   previous <= 1: yes (5.0)
+|   |   |   |   |   previous > 1
+|   |   |   |   |   |   duration <= 301: no (6.0)
+|   |   |   |   |   |   duration > 301: yes (10.0/3.0)
+|   |   |   |   month = dec: yes (5.0)
+|   |   |   |   month = jan
+|   |   |   |   |   previous <= 1
+|   |   |   |   |   |   duration <= 332: no (2.0)
+|   |   |   |   |   |   duration > 332: yes (2.0)
+|   |   |   |   |   previous > 1: no (5.0)
+|   |   |   |   month = feb
+|   |   |   |   |   previous <= 3: no (13.0/3.0)
+|   |   |   |   |   previous > 3: yes (2.0)
+|   |   |   |   month = mar: yes (11.0/1.0)
+|   |   |   |   month = apr: yes (28.0/13.0)
+|   |   |   |   month = sep: yes (17.0/1.0)
+|   |   |   poutcome = failure
+|   |   |   |   month = may
+|   |   |   |   |   duration <= 340: no (71.0/17.0)
+|   |   |   |   |   duration > 340
+|   |   |   |   |   |   previous <= 1: no (15.0/7.0)
+|   |   |   |   |   |   previous > 1: yes (22.0/5.0)
+|   |   |   |   month = jun: yes (20.0/2.0)
+|   |   |   |   month = jul: yes (27.0/3.0)
+|   |   |   |   month = aug: yes (42.0/6.0)
+|   |   |   |   month = oct: yes (33.0/6.0)
+|   |   |   |   month = nov
+|   |   |   |   |   previous <= 6: no (47.0/18.0)
+|   |   |   |   |   previous > 6: yes (5.0)
+|   |   |   |   month = dec: yes (9.0)
+|   |   |   |   month = jan
+|   |   |   |   |   duration <= 238: no (4.0)
+|   |   |   |   |   duration > 238
+|   |   |   |   |   |   previous <= 1: no (3.0/1.0)
+|   |   |   |   |   |   previous > 1: yes (6.0/1.0)
+|   |   |   |   month = feb: yes (33.0/13.0)
+|   |   |   |   month = mar: yes (14.0/1.0)
+|   |   |   |   month = apr
+|   |   |   |   |   previous <= 6: no (55.0/20.0)
+|   |   |   |   |   previous > 6: yes (5.0/1.0)
+|   |   |   |   month = sep: yes (27.0/4.0)
+|   |   |   poutcome = success: yes (551.0/29.0)
+|   duration > 472: yes (2957.0/538.0)
+
+Number of Leaves  : 	130
+
+Size of the tree : 	185

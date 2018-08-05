@@ -1,0 +1,345 @@
+J48 pruned tree
+------------------
+
+poutcome <= 1
+|   duration <= 408
+|   |   month <= 4
+|   |   |   duration <= 103: no (1612.0/49.0)
+|   |   |   duration > 103
+|   |   |   |   month <= 2
+|   |   |   |   |   pdays <= 279
+|   |   |   |   |   |   pdays <= 183
+|   |   |   |   |   |   |   month <= 1: no (618.0/41.0)
+|   |   |   |   |   |   |   month > 1
+|   |   |   |   |   |   |   |   previous <= 3: no (1051.0/151.0)
+|   |   |   |   |   |   |   |   previous > 3
+|   |   |   |   |   |   |   |   |   pdays <= 152: no (22.0/3.0)
+|   |   |   |   |   |   |   |   |   pdays > 152
+|   |   |   |   |   |   |   |   |   |   previous <= 7: yes (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   previous > 7: no (2.0)
+|   |   |   |   |   |   pdays > 183: no (517.0/14.0)
+|   |   |   |   |   pdays > 279
+|   |   |   |   |   |   duration <= 267
+|   |   |   |   |   |   |   poutcome <= 0
+|   |   |   |   |   |   |   |   month <= 1
+|   |   |   |   |   |   |   |   |   duration <= 176: no (2.0)
+|   |   |   |   |   |   |   |   |   duration > 176: yes (3.0/1.0)
+|   |   |   |   |   |   |   |   month > 1
+|   |   |   |   |   |   |   |   |   previous <= 1: no (2.0)
+|   |   |   |   |   |   |   |   |   previous > 1: yes (7.0/3.0)
+|   |   |   |   |   |   |   poutcome > 0
+|   |   |   |   |   |   |   |   duration <= 177: yes (2.0)
+|   |   |   |   |   |   |   |   duration > 177: no (3.0)
+|   |   |   |   |   |   duration > 267: yes (6.0)
+|   |   |   |   month > 2
+|   |   |   |   |   month <= 3
+|   |   |   |   |   |   previous <= 0
+|   |   |   |   |   |   |   duration <= 173: no (81.0/36.0)
+|   |   |   |   |   |   |   duration > 173: yes (107.0/27.0)
+|   |   |   |   |   |   previous > 0: no (83.0/34.0)
+|   |   |   |   |   month > 3
+|   |   |   |   |   |   duration <= 312: no (1334.0/188.0)
+|   |   |   |   |   |   duration > 312
+|   |   |   |   |   |   |   poutcome <= 0: no (290.0/74.0)
+|   |   |   |   |   |   |   poutcome > 0
+|   |   |   |   |   |   |   |   pdays <= 83: yes (2.0)
+|   |   |   |   |   |   |   |   pdays > 83: no (35.0/4.0)
+|   |   month > 4
+|   |   |   month <= 8
+|   |   |   |   previous <= 0: no (23939.0/472.0)
+|   |   |   |   previous > 0
+|   |   |   |   |   month <= 5
+|   |   |   |   |   |   pdays <= 146
+|   |   |   |   |   |   |   duration <= 173: no (69.0/1.0)
+|   |   |   |   |   |   |   duration > 173
+|   |   |   |   |   |   |   |   previous <= 7
+|   |   |   |   |   |   |   |   |   poutcome <= 0: no (33.0/15.0)
+|   |   |   |   |   |   |   |   |   poutcome > 0
+|   |   |   |   |   |   |   |   |   |   pdays <= 96: yes (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   pdays > 96: no (6.0)
+|   |   |   |   |   |   |   |   previous > 7: no (4.0)
+|   |   |   |   |   |   pdays > 146
+|   |   |   |   |   |   |   duration <= 260: no (1483.0/9.0)
+|   |   |   |   |   |   |   duration > 260
+|   |   |   |   |   |   |   |   pdays <= 258
+|   |   |   |   |   |   |   |   |   pdays <= 176: no (37.0)
+|   |   |   |   |   |   |   |   |   pdays > 176
+|   |   |   |   |   |   |   |   |   |   duration <= 345
+|   |   |   |   |   |   |   |   |   |   |   pdays <= 203
+|   |   |   |   |   |   |   |   |   |   |   |   duration <= 330
+|   |   |   |   |   |   |   |   |   |   |   |   |   pdays <= 178: no (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   pdays > 178: yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   duration > 330: no (2.0)
+|   |   |   |   |   |   |   |   |   |   |   pdays > 203: no (6.0)
+|   |   |   |   |   |   |   |   |   |   duration > 345: yes (5.0)
+|   |   |   |   |   |   |   |   pdays > 258: no (273.0/9.0)
+|   |   |   |   |   month > 5
+|   |   |   |   |   |   duration <= 154: no (254.0/20.0)
+|   |   |   |   |   |   duration > 154
+|   |   |   |   |   |   |   pdays <= 370
+|   |   |   |   |   |   |   |   previous <= 6: no (231.0/88.0)
+|   |   |   |   |   |   |   |   previous > 6
+|   |   |   |   |   |   |   |   |   pdays <= 91
+|   |   |   |   |   |   |   |   |   |   month <= 6: yes (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   month > 6: no (8.0/2.0)
+|   |   |   |   |   |   |   |   |   pdays > 91: yes (25.0/8.0)
+|   |   |   |   |   |   |   pdays > 370
+|   |   |   |   |   |   |   |   duration <= 222: no (21.0/7.0)
+|   |   |   |   |   |   |   |   duration > 222: yes (39.0/6.0)
+|   |   |   month > 8
+|   |   |   |   month <= 10
+|   |   |   |   |   duration <= 129: no (312.0/29.0)
+|   |   |   |   |   duration > 129
+|   |   |   |   |   |   previous <= 5
+|   |   |   |   |   |   |   duration <= 199
+|   |   |   |   |   |   |   |   month <= 9
+|   |   |   |   |   |   |   |   |   previous <= 2: no (60.0/13.0)
+|   |   |   |   |   |   |   |   |   previous > 2: yes (4.0/1.0)
+|   |   |   |   |   |   |   |   month > 9
+|   |   |   |   |   |   |   |   |   duration <= 156
+|   |   |   |   |   |   |   |   |   |   pdays <= 171
+|   |   |   |   |   |   |   |   |   |   |   poutcome <= -1
+|   |   |   |   |   |   |   |   |   |   |   |   previous <= 1: yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   previous > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   previous <= 3: no (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   previous > 3: yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   poutcome > -1: yes (45.0/17.0)
+|   |   |   |   |   |   |   |   |   |   pdays > 171: no (6.0)
+|   |   |   |   |   |   |   |   |   duration > 156: no (60.0/17.0)
+|   |   |   |   |   |   |   duration > 199
+|   |   |   |   |   |   |   |   poutcome <= -1
+|   |   |   |   |   |   |   |   |   pdays <= 670
+|   |   |   |   |   |   |   |   |   |   pdays <= 78: yes (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   pdays > 78: no (69.0/26.0)
+|   |   |   |   |   |   |   |   |   pdays > 670: yes (7.0)
+|   |   |   |   |   |   |   |   poutcome > -1
+|   |   |   |   |   |   |   |   |   month <= 9
+|   |   |   |   |   |   |   |   |   |   poutcome <= 0: yes (96.0/40.0)
+|   |   |   |   |   |   |   |   |   |   poutcome > 0
+|   |   |   |   |   |   |   |   |   |   |   previous <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   pdays <= 97: no (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   pdays > 97: yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   previous > 2: yes (8.0/2.0)
+|   |   |   |   |   |   |   |   |   month > 9
+|   |   |   |   |   |   |   |   |   |   poutcome <= 0: yes (108.0/49.0)
+|   |   |   |   |   |   |   |   |   |   poutcome > 0
+|   |   |   |   |   |   |   |   |   |   |   previous <= 1: no (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   previous > 1
+|   |   |   |   |   |   |   |   |   |   |   |   previous <= 4: yes (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   previous > 4: no (2.0)
+|   |   |   |   |   |   previous > 5
+|   |   |   |   |   |   |   month <= 9
+|   |   |   |   |   |   |   |   poutcome <= 0
+|   |   |   |   |   |   |   |   |   previous <= 10: no (10.0/2.0)
+|   |   |   |   |   |   |   |   |   previous > 10: yes (2.0)
+|   |   |   |   |   |   |   |   poutcome > 0
+|   |   |   |   |   |   |   |   |   duration <= 159: no (2.0)
+|   |   |   |   |   |   |   |   |   duration > 159: yes (4.0)
+|   |   |   |   |   |   |   month > 9
+|   |   |   |   |   |   |   |   duration <= 284: no (18.0)
+|   |   |   |   |   |   |   |   duration > 284
+|   |   |   |   |   |   |   |   |   previous <= 9: yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   previous > 9: no (2.0)
+|   |   |   |   month > 10
+|   |   |   |   |   month <= 11
+|   |   |   |   |   |   pdays <= 189: no (3116.0/107.0)
+|   |   |   |   |   |   pdays > 189
+|   |   |   |   |   |   |   poutcome <= 0: no (74.0/9.0)
+|   |   |   |   |   |   |   poutcome > 0
+|   |   |   |   |   |   |   |   duration <= 345: no (12.0/1.0)
+|   |   |   |   |   |   |   |   duration > 345: yes (2.0)
+|   |   |   |   |   month > 11
+|   |   |   |   |   |   duration <= 203: no (61.0/5.0)
+|   |   |   |   |   |   duration > 203
+|   |   |   |   |   |   |   pdays <= 218
+|   |   |   |   |   |   |   |   pdays <= 190
+|   |   |   |   |   |   |   |   |   duration <= 263: no (17.0/4.0)
+|   |   |   |   |   |   |   |   |   duration > 263
+|   |   |   |   |   |   |   |   |   |   poutcome <= -1
+|   |   |   |   |   |   |   |   |   |   |   pdays <= 151: no (2.0)
+|   |   |   |   |   |   |   |   |   |   |   pdays > 151: yes (2.0)
+|   |   |   |   |   |   |   |   |   |   poutcome > -1: yes (31.0/10.0)
+|   |   |   |   |   |   |   |   pdays > 190: no (6.0)
+|   |   |   |   |   |   |   pdays > 218: yes (5.0)
+|   duration > 408
+|   |   duration <= 647
+|   |   |   pdays <= 370
+|   |   |   |   month <= 7
+|   |   |   |   |   month <= 4
+|   |   |   |   |   |   month <= 2: no (367.0/66.0)
+|   |   |   |   |   |   month > 2
+|   |   |   |   |   |   |   month <= 3: yes (36.0/11.0)
+|   |   |   |   |   |   |   month > 3: no (351.0/93.0)
+|   |   |   |   |   month > 4
+|   |   |   |   |   |   previous <= 0: no (2256.0/379.0)
+|   |   |   |   |   |   previous > 0
+|   |   |   |   |   |   |   month <= 5
+|   |   |   |   |   |   |   |   pdays <= 169
+|   |   |   |   |   |   |   |   |   duration <= 460: yes (7.0/1.0)
+|   |   |   |   |   |   |   |   |   duration > 460: no (13.0/3.0)
+|   |   |   |   |   |   |   |   pdays > 169: no (182.0/41.0)
+|   |   |   |   |   |   |   month > 5
+|   |   |   |   |   |   |   |   poutcome <= 0
+|   |   |   |   |   |   |   |   |   month <= 6
+|   |   |   |   |   |   |   |   |   |   previous <= 2: no (2.0)
+|   |   |   |   |   |   |   |   |   |   previous > 2: yes (8.0/1.0)
+|   |   |   |   |   |   |   |   |   month > 6: no (8.0/2.0)
+|   |   |   |   |   |   |   |   poutcome > 0: yes (11.0/2.0)
+|   |   |   |   month > 7
+|   |   |   |   |   poutcome <= 0
+|   |   |   |   |   |   month <= 10
+|   |   |   |   |   |   |   month <= 8
+|   |   |   |   |   |   |   |   duration <= 616: no (408.0/103.0)
+|   |   |   |   |   |   |   |   duration > 616: yes (40.0/14.0)
+|   |   |   |   |   |   |   month > 8
+|   |   |   |   |   |   |   |   month <= 9
+|   |   |   |   |   |   |   |   |   previous <= 4: yes (32.0/15.0)
+|   |   |   |   |   |   |   |   |   previous > 4: no (2.0)
+|   |   |   |   |   |   |   |   month > 9
+|   |   |   |   |   |   |   |   |   duration <= 511: yes (25.0/4.0)
+|   |   |   |   |   |   |   |   |   duration > 511
+|   |   |   |   |   |   |   |   |   |   poutcome <= -1
+|   |   |   |   |   |   |   |   |   |   |   previous <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   duration <= 621: yes (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   duration > 621: no (2.0)
+|   |   |   |   |   |   |   |   |   |   |   previous > 5: no (2.0)
+|   |   |   |   |   |   |   |   |   |   poutcome > -1: no (18.0/7.0)
+|   |   |   |   |   |   month > 10
+|   |   |   |   |   |   |   month <= 11
+|   |   |   |   |   |   |   |   poutcome <= -1
+|   |   |   |   |   |   |   |   |   pdays <= 98
+|   |   |   |   |   |   |   |   |   |   duration <= 429: no (2.0)
+|   |   |   |   |   |   |   |   |   |   duration > 429
+|   |   |   |   |   |   |   |   |   |   |   duration <= 623: yes (6.0)
+|   |   |   |   |   |   |   |   |   |   |   duration > 623: no (2.0)
+|   |   |   |   |   |   |   |   |   pdays > 98: no (45.0/6.0)
+|   |   |   |   |   |   |   |   poutcome > -1: no (258.0/55.0)
+|   |   |   |   |   |   |   month > 11: yes (21.0/5.0)
+|   |   |   |   |   poutcome > 0
+|   |   |   |   |   |   month <= 10
+|   |   |   |   |   |   |   pdays <= 89: no (5.0/2.0)
+|   |   |   |   |   |   |   pdays > 89: yes (17.0/1.0)
+|   |   |   |   |   |   month > 10
+|   |   |   |   |   |   |   month <= 11: no (31.0/10.0)
+|   |   |   |   |   |   |   month > 11: yes (3.0)
+|   |   |   pdays > 370
+|   |   |   |   pdays <= 500
+|   |   |   |   |   month <= 8
+|   |   |   |   |   |   pdays <= 385
+|   |   |   |   |   |   |   previous <= 2: yes (5.0/1.0)
+|   |   |   |   |   |   |   previous > 2: no (3.0)
+|   |   |   |   |   |   pdays > 385: yes (9.0)
+|   |   |   |   |   month > 8
+|   |   |   |   |   |   pdays <= 446: yes (2.0)
+|   |   |   |   |   |   pdays > 446: no (5.0)
+|   |   |   |   pdays > 500: yes (11.0)
+|   |   duration > 647
+|   |   |   duration <= 827
+|   |   |   |   poutcome <= -1
+|   |   |   |   |   month <= 4
+|   |   |   |   |   |   month <= 3
+|   |   |   |   |   |   |   pdays <= 186: yes (9.0/1.0)
+|   |   |   |   |   |   |   pdays > 186
+|   |   |   |   |   |   |   |   pdays <= 266: no (10.0)
+|   |   |   |   |   |   |   |   pdays > 266: yes (3.0/1.0)
+|   |   |   |   |   |   month > 3
+|   |   |   |   |   |   |   previous <= 3
+|   |   |   |   |   |   |   |   pdays <= 158: no (5.0)
+|   |   |   |   |   |   |   |   pdays > 158
+|   |   |   |   |   |   |   |   |   pdays <= 362: yes (7.0/1.0)
+|   |   |   |   |   |   |   |   |   pdays > 362: no (2.0)
+|   |   |   |   |   |   |   previous > 3: no (6.0)
+|   |   |   |   |   month > 4
+|   |   |   |   |   |   month <= 10: yes (71.0/25.0)
+|   |   |   |   |   |   month > 10
+|   |   |   |   |   |   |   pdays <= 161: yes (6.0/1.0)
+|   |   |   |   |   |   |   pdays > 161: no (11.0)
+|   |   |   |   poutcome > -1
+|   |   |   |   |   poutcome <= 0
+|   |   |   |   |   |   month <= 7: no (903.0/336.0)
+|   |   |   |   |   |   month > 7
+|   |   |   |   |   |   |   month <= 10
+|   |   |   |   |   |   |   |   month <= 8: no (138.0/66.0)
+|   |   |   |   |   |   |   |   month > 8: yes (26.0/9.0)
+|   |   |   |   |   |   |   month > 10: no (98.0/39.0)
+|   |   |   |   |   poutcome > 0
+|   |   |   |   |   |   previous <= 9: no (54.0/25.0)
+|   |   |   |   |   |   previous > 9: yes (3.0)
+|   |   |   duration > 827: yes (1712.0/732.0)
+poutcome > 1
+|   duration <= 162
+|   |   duration <= 132
+|   |   |   duration <= 80: no (69.0/6.0)
+|   |   |   duration > 80
+|   |   |   |   previous <= 6
+|   |   |   |   |   previous <= 5: no (152.0/42.0)
+|   |   |   |   |   previous > 5
+|   |   |   |   |   |   month <= 9: yes (5.0)
+|   |   |   |   |   |   month > 9: no (3.0/1.0)
+|   |   |   |   previous > 6: no (12.0)
+|   |   duration > 132
+|   |   |   duration <= 155: yes (93.0/40.0)
+|   |   |   duration > 155: no (26.0/6.0)
+|   duration > 162
+|   |   pdays <= 197
+|   |   |   month <= 10
+|   |   |   |   pdays <= 176
+|   |   |   |   |   pdays <= 96
+|   |   |   |   |   |   previous <= 1: yes (96.0/14.0)
+|   |   |   |   |   |   previous > 1
+|   |   |   |   |   |   |   month <= 1
+|   |   |   |   |   |   |   |   pdays <= 91: yes (6.0)
+|   |   |   |   |   |   |   |   pdays > 91
+|   |   |   |   |   |   |   |   |   pdays <= 95
+|   |   |   |   |   |   |   |   |   |   duration <= 325: no (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   duration > 325: yes (2.0)
+|   |   |   |   |   |   |   |   |   pdays > 95: yes (2.0)
+|   |   |   |   |   |   |   month > 1: yes (230.0/44.0)
+|   |   |   |   |   pdays > 96
+|   |   |   |   |   |   month <= 6
+|   |   |   |   |   |   |   month <= 3: yes (12.0/2.0)
+|   |   |   |   |   |   |   month > 3: no (51.0/23.0)
+|   |   |   |   |   |   month > 6: yes (79.0/24.0)
+|   |   |   |   pdays > 176
+|   |   |   |   |   pdays <= 185
+|   |   |   |   |   |   month <= 2
+|   |   |   |   |   |   |   month <= 1: no (2.0)
+|   |   |   |   |   |   |   month > 1: yes (22.0/6.0)
+|   |   |   |   |   |   month > 2: yes (232.0/23.0)
+|   |   |   |   |   pdays > 185
+|   |   |   |   |   |   previous <= 2
+|   |   |   |   |   |   |   month <= 7: yes (22.0/1.0)
+|   |   |   |   |   |   |   month > 7
+|   |   |   |   |   |   |   |   duration <= 656: yes (14.0/3.0)
+|   |   |   |   |   |   |   |   duration > 656: no (2.0)
+|   |   |   |   |   |   previous > 2
+|   |   |   |   |   |   |   previous <= 6
+|   |   |   |   |   |   |   |   pdays <= 187: yes (10.0/1.0)
+|   |   |   |   |   |   |   |   pdays > 187
+|   |   |   |   |   |   |   |   |   pdays <= 190: no (4.0)
+|   |   |   |   |   |   |   |   |   pdays > 190: yes (8.0/2.0)
+|   |   |   |   |   |   |   previous > 6: no (3.0)
+|   |   |   month > 10
+|   |   |   |   month <= 11
+|   |   |   |   |   pdays <= 98
+|   |   |   |   |   |   pdays <= 26: no (3.0)
+|   |   |   |   |   |   pdays > 26: yes (47.0/6.0)
+|   |   |   |   |   pdays > 98
+|   |   |   |   |   |   pdays <= 179
+|   |   |   |   |   |   |   previous <= 1
+|   |   |   |   |   |   |   |   duration <= 238: no (2.0)
+|   |   |   |   |   |   |   |   duration > 238: yes (4.0)
+|   |   |   |   |   |   |   previous > 1: no (14.0)
+|   |   |   |   |   |   pdays > 179: yes (26.0/8.0)
+|   |   |   |   month > 11: yes (27.0/6.0)
+|   |   pdays > 197
+|   |   |   month <= 5
+|   |   |   |   duration <= 301
+|   |   |   |   |   month <= 1: yes (4.0/1.0)
+|   |   |   |   |   month > 1: no (49.0/12.0)
+|   |   |   |   duration > 301: yes (78.0/28.0)
+|   |   |   month > 5: yes (91.0/15.0)
+
+Number of Leaves  : 	170
+
+Size of the tree : 	339

@@ -1,0 +1,98 @@
+[
+  {
+    "month": "jan",
+    "totalCustomer": 1403,
+    "newCustomer": 905,
+    "previousSuccess": 64,
+    "currentSuccess": 142,
+    "successNewCustomer": 82
+  },
+  {
+    "month": "feb",
+    "totalCustomer": 2649,
+    "newCustomer": 1725,
+    "previousSuccess": 143,
+    "currentSuccess": 441,
+    "successNewCustomer": 260
+  },
+  {
+    "month": "mar",
+    "totalCustomer": 477,
+    "newCustomer": 304,
+    "previousSuccess": 60,
+    "currentSuccess": 248,
+    "successNewCustomer": 156
+  },
+  {
+    "month": "apr",
+    "totalCustomer": 2932,
+    "newCustomer": 1814,
+    "previousSuccess": 129,
+    "currentSuccess": 577,
+    "successNewCustomer": 387
+  },
+  {
+    "month": "may",
+    "totalCustomer": 13766,
+    "newCustomer": 11252,
+    "previousSuccess": 236,
+    "currentSuccess": 925,
+    "successNewCustomer": 620
+  },
+  {
+    "month": "jun",
+    "totalCustomer": 5341,
+    "newCustomer": 5019,
+    "previousSuccess": 118,
+    "currentSuccess": 546,
+    "successNewCustomer": 395
+  },
+  {
+    "month": "jul",
+    "totalCustomer": 6895,
+    "newCustomer": 6641,
+    "previousSuccess": 99,
+    "currentSuccess": 627,
+    "successNewCustomer": 491
+  },
+  {
+    "month": "aug",
+    "totalCustomer": 6247,
+    "newCustomer": 5716,
+    "previousSuccess": 207,
+    "currentSuccess": 688,
+    "successNewCustomer": 454
+  },
+  {
+    "month": "sep",
+    "totalCustomer": 579,
+    "newCustomer": 266,
+    "previousSuccess": 132,
+    "currentSuccess": 269,
+    "successNewCustomer": 101
+  },
+  {
+    "month": "oct",
+    "totalCustomer": 738,
+    "newCustomer": 396,
+    "previousSuccess": 131,
+    "currentSuccess": 323,
+    "successNewCustomer": 154
+  },
+  {
+    "month": "nov",
+    "totalCustomer": 3970,
+    "newCustomer": 2820,
+    "previousSuccess": 141,
+    "currentSuccess": 403,
+    "successNewCustomer": 242
+  },
+  {
+    "month": "dec",
+    "totalCustomer": 214,
+    "newCustomer": 96,
+    "previousSuccess": 51,
+    "currentSuccess": 100,
+    "successNewCustomer": 42
+  }
+]

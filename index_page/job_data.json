@@ -1,0 +1,65 @@
+[
+    {
+        "categorie": "Emplyoeed", 
+        "values": [
+             {
+                "value": 896, 
+                "rate": "Less than 25 years"
+            }, 
+            {
+                "value": 32769, 
+                "rate": "26 to 50 years"
+            }, 
+            {
+                "value": 32769, 
+                "rate": "51 to 64 years"
+            }, 
+            {
+                "value": 104, 
+                "rate": "More than 65 years old"
+            }
+        ]
+    }, 
+    {
+        "categorie": "Unempyoeed", 
+        "values": [
+            {
+                "value": 438, 
+                "rate": "Less than 25 years"
+            }, 
+            {
+                "value": 1680, 
+                "rate": "26 to 50 years"
+            }, 
+            {
+                "value": 6649, 
+                "rate": "51 to 64 years"
+            }, 
+            {
+                "value": 636, 
+                "rate": "More than 65 years old"
+            }
+        ]
+    }, 
+    {
+        "categorie": "Unknown", 
+        "values": [
+             {
+                "value": 2, 
+                "rate": "Less than 25 years"
+            }, 
+            {
+                "value": 171, 
+                "rate": "26 to 50 years"
+            }, 
+            {
+                "value": 104, 
+                "rate": "51 to 64 years"
+            }, 
+            {
+                "value": 11, 
+                "rate": "More than 65 years old"
+            }
+        ]
+    } 
+]

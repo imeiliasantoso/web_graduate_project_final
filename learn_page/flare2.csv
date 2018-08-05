@@ -1,0 +1,16 @@
+id,value
+rank_country,
+rank_country.Length_of_url,
+rank_country.Length_of_url.Phishing(<=25),
+rank_country.Length_of_url.largest_path,
+rank_country.Length_of_url.largest_path.Unknown(>6),
+rank_country.Length_of_url.largest_path.token_count,
+rank_country.Length_of_url.largest_path.token_count.Phishing(<=11),
+rank_country.Length_of_url.largest_path.token_count.path_token_count,
+rank_country.Length_of_url.largest_path.token_count.path_token_count.Unknown(<=2),
+rank_country.Length_of_url.largest_path.token_count.path_token_count.Phishing(>2),
+rank_country.rank_host,
+rank_country.rank_host.Not_Phishing(<=787),17010
+rank_country.rank_host.No_of_dots,5842
+rank_country.rank_host.No_of_dots.Not_Phishing(<=1),
+rank_country.rank_host.No_of_dots.Unknown(>1),1983

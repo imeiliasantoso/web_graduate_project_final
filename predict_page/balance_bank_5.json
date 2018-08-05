@@ -1,0 +1,2575 @@
+{
+  "name": "URL_of_Anchor", 
+  "children": [
+    {
+      "name": "duration <= 206", 
+      "children": [
+        {
+          "name": "poutcome = unknown", 
+          "children": [
+            {
+              "name": "month = may", 
+              "number": 941.0
+            }, 
+            {
+              "name": "month = jun", 
+              "number": 483.0
+            }, 
+            {
+              "name": "month = jul", 
+              "number": 547.0
+            }, 
+            {
+              "name": "month = aug", 
+              "number": 579.0
+            }, 
+            {
+              "name": "month = oct", 
+              "children": [
+                {
+                  "name": "duration <= 76", 
+                  "number": 9.0
+                }, 
+                {
+                  "name": "duration > 76", 
+                  "number": 70.0
+                }, 
+                {
+                  "name": "duration <= 126", 
+                  "number": 2.0
+                }, 
+                {
+                  "name": "duration > 126", 
+                  "number": 4.0
+                }, 
+                {
+                  "name": "previous <= 6", 
+                  "children": [
+                    {
+                      "name": "duration <= 86", 
+                      "number": 3.0
+                    }, 
+                    {
+                      "name": "duration > 86", 
+                      "number": 19.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "previous > 6", 
+                  "number": 2.0
+                }
+              ]
+            }, 
+            {
+              "name": "month = nov", 
+              "number": 278.0
+            }, 
+            {
+              "name": "month = dec", 
+              "number": 5.0
+            }, 
+            {
+              "name": "month = jan", 
+              "number": 91.0
+            }, 
+            {
+              "name": "month = feb", 
+              "number": 202.0
+            }, 
+            {
+              "name": "month = mar", 
+              "children": [
+                {
+                  "name": "duration <= 78", 
+                  "number": 5.0
+                }, 
+                {
+                  "name": "duration > 78", 
+                  "number": 77.0
+                }, 
+                {
+                  "name": "duration <= 121", 
+                  "number": 2.0
+                }, 
+                {
+                  "name": "duration > 121", 
+                  "number": 6.0
+                }
+              ]
+            }, 
+            {
+              "name": "month = apr", 
+              "children": [
+                {
+                  "name": "duration <= 96", 
+                  "number": 43.0
+                }, 
+                {
+                  "name": "duration > 96", 
+                  "number": 148.0
+                }, 
+                {
+                  "name": "duration <= 178", 
+                  "children": [
+                    {
+                      "name": "previous <= 5", 
+                      "number": 13.0
+                    }, 
+                    {
+                      "name": "previous > 5", 
+                      "number": 3.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "duration > 178", 
+                  "number": 2.0
+                }, 
+                {
+                  "name": "duration <= 191", 
+                  "children": [
+                    {
+                      "name": "previous <= 2", 
+                      "number": 26.0
+                    }, 
+                    {
+                      "name": "previous > 2", 
+                      "children": [
+                        {
+                          "name": "duration <= 132", 
+                          "number": 17.0
+                        }, 
+                        {
+                          "name": "duration > 132", 
+                          "children": [
+                            {
+                              "name": "duration <= 161", 
+                              "number": 3.0
+                            }, 
+                            {
+                              "name": "duration > 161", 
+                              "number": 5.0
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }, 
+                {
+                  "name": "duration > 191", 
+                  "number": 5.0
+                }, 
+                {
+                  "name": "previous <= 6", 
+                  "number": 55.0
+                }, 
+                {
+                  "name": "previous > 6", 
+                  "number": 5.0
+                }
+              ]
+            }, 
+            {
+              "name": "month = sep", 
+              "children": [
+                {
+                  "name": "duration <= 79", 
+                  "number": 7.0
+                }, 
+                {
+                  "name": "duration > 79", 
+                  "children": [
+                    {
+                      "name": "duration <= 183", 
+                      "children": [
+                        {
+                          "name": "duration <= 110", 
+                          "number": 4.0
+                        }, 
+                        {
+                          "name": "duration > 110", 
+                          "number": 16.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "duration > 183", 
+                      "number": 8.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "previous <= 1", 
+                  "number": 3.0
+                }, 
+                {
+                  "name": "previous > 1", 
+                  "children": [
+                    {
+                      "name": "duration <= 139", 
+                      "number": 3.0
+                    }, 
+                    {
+                      "name": "duration > 139", 
+                      "number": 7.0
+                    }, 
+                    {
+                      "name": "duration <= 301", 
+                      "number": 6.0
+                    }, 
+                    {
+                      "name": "duration > 301", 
+                      "number": 10.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "duration <= 77", 
+                  "number": 2.0
+                }, 
+                {
+                  "name": "duration > 77", 
+                  "number": 9.0
+                }
+              ]
+            }
+          ]
+        }, 
+        {
+          "name": "poutcome = other", 
+          "children": [
+            {
+              "name": "month = may", 
+              "number": 49.0
+            }, 
+            {
+              "name": "month = jun", 
+              "children": [
+                {
+                  "name": "duration <= 112", 
+                  "number": 3.0
+                }, 
+                {
+                  "name": "duration > 112", 
+                  "number": 5.0
+                }
+              ]
+            }, 
+            {
+              "name": "month = jul", 
+              "children": [
+                {
+                  "name": "duration <= 113", 
+                  "number": 3.0
+                }, 
+                {
+                  "name": "duration > 113", 
+                  "number": 6.0
+                }, 
+                {
+                  "name": "duration <= 124", 
+                  "number": 4.0
+                }, 
+                {
+                  "name": "duration > 124", 
+                  "number": 9.0
+                }
+              ]
+            }, 
+            {
+              "name": "month = aug", 
+              "children": [
+                {
+                  "name": "duration <= 156", 
+                  "number": 7.0
+                }, 
+                {
+                  "name": "duration > 156", 
+                  "number": 8.0
+                }, 
+                {
+                  "name": "duration <= 107", 
+                  "number": 10.0
+                }, 
+                {
+                  "name": "duration > 107", 
+                  "children": [
+                    {
+                      "name": "previous <= 5", 
+                      "number": 23.0
+                    }, 
+                    {
+                      "name": "previous > 5", 
+                      "number": 4.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "duration <= 62", 
+                  "number": 3.0
+                }, 
+                {
+                  "name": "duration > 62", 
+                  "number": 7.0
+                }, 
+                {
+                  "name": "duration <= 351", 
+                  "number": 233.0
+                }, 
+                {
+                  "name": "duration > 351", 
+                  "number": 95.0
+                }
+              ]
+            }, 
+            {
+              "name": "month = oct", 
+              "children": [
+                {
+                  "name": "duration <= 76", 
+                  "number": 9.0
+                }, 
+                {
+                  "name": "duration > 76", 
+                  "number": 70.0
+                }, 
+                {
+                  "name": "duration <= 126", 
+                  "number": 2.0
+                }, 
+                {
+                  "name": "duration > 126", 
+                  "number": 4.0
+                }, 
+                {
+                  "name": "previous <= 6", 
+                  "children": [
+                    {
+                      "name": "duration <= 86", 
+                      "number": 3.0
+                    }, 
+                    {
+                      "name": "duration > 86", 
+                      "number": 19.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "previous > 6", 
+                  "number": 2.0
+                }
+              ]
+            }, 
+            {
+              "name": "month = nov", 
+              "number": 18.0
+            }, 
+            {
+              "name": "month = dec", 
+              "number": 3.0
+            }, 
+            {
+              "name": "month = jan", 
+              "number": 24.0
+            }, 
+            {
+              "name": "month = feb", 
+              "number": 34.0
+            }, 
+            {
+              "name": "month = mar", 
+              "children": [
+                {
+                  "name": "duration <= 78", 
+                  "number": 5.0
+                }, 
+                {
+                  "name": "duration > 78", 
+                  "number": 77.0
+                }, 
+                {
+                  "name": "duration <= 121", 
+                  "number": 2.0
+                }, 
+                {
+                  "name": "duration > 121", 
+                  "number": 6.0
+                }
+              ]
+            }, 
+            {
+              "name": "month = apr", 
+              "children": [
+                {
+                  "name": "duration <= 96", 
+                  "number": 43.0
+                }, 
+                {
+                  "name": "duration > 96", 
+                  "number": 148.0
+                }, 
+                {
+                  "name": "duration <= 178", 
+                  "children": [
+                    {
+                      "name": "previous <= 5", 
+                      "number": 13.0
+                    }, 
+                    {
+                      "name": "previous > 5", 
+                      "number": 3.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "duration > 178", 
+                  "number": 2.0
+                }, 
+                {
+                  "name": "duration <= 191", 
+                  "children": [
+                    {
+                      "name": "previous <= 2", 
+                      "number": 26.0
+                    }, 
+                    {
+                      "name": "previous > 2", 
+                      "children": [
+                        {
+                          "name": "duration <= 132", 
+                          "number": 17.0
+                        }, 
+                        {
+                          "name": "duration > 132", 
+                          "children": [
+                            {
+                              "name": "duration <= 161", 
+                              "number": 3.0
+                            }, 
+                            {
+                              "name": "duration > 161", 
+                              "number": 5.0
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }, 
+                {
+                  "name": "duration > 191", 
+                  "number": 5.0
+                }, 
+                {
+                  "name": "previous <= 6", 
+                  "number": 55.0
+                }, 
+                {
+                  "name": "previous > 6", 
+                  "number": 5.0
+                }
+              ]
+            }, 
+            {
+              "name": "month = sep", 
+              "number": 11.0
+            }, 
+            {
+              "name": "month = may", 
+              "number": 37.0
+            }, 
+            {
+              "name": "month = jun", 
+              "number": 18.0
+            }, 
+            {
+              "name": "month = jul", 
+              "number": 15.0
+            }, 
+            {
+              "name": "month = aug", 
+              "number": 19.0
+            }, 
+            {
+              "name": "month = oct", 
+              "number": 13.0
+            }, 
+            {
+              "name": "month = nov", 
+              "children": [
+                {
+                  "name": "duration <= 450", 
+                  "number": 150.0
+                }, 
+                {
+                  "name": "duration > 450", 
+                  "number": 9.0
+                }, 
+                {
+                  "name": "previous <= 1", 
+                  "number": 5.0
+                }, 
+                {
+                  "name": "previous > 1", 
+                  "children": [
+                    {
+                      "name": "duration <= 139", 
+                      "number": 3.0
+                    }, 
+                    {
+                      "name": "duration > 139", 
+                      "number": 7.0
+                    }, 
+                    {
+                      "name": "duration <= 301", 
+                      "number": 6.0
+                    }, 
+                    {
+                      "name": "duration > 301", 
+                      "number": 10.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "previous <= 6", 
+                  "number": 47.0
+                }, 
+                {
+                  "name": "previous > 6", 
+                  "number": 5.0
+                }
+              ]
+            }, 
+            {
+              "name": "month = dec", 
+              "number": 5.0
+            }, 
+            {
+              "name": "month = jan", 
+              "children": [
+                {
+                  "name": "duration <= 158", 
+                  "number": 20.0
+                }, 
+                {
+                  "name": "duration > 158", 
+                  "children": [
+                    {
+                      "name": "duration <= 190", 
+                      "number": 4.0
+                    }, 
+                    {
+                      "name": "duration > 190", 
+                      "number": 3.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "duration <= 395", 
+                  "number": 62.0
+                }, 
+                {
+                  "name": "duration > 395", 
+                  "number": 16.0
+                }, 
+                {
+                  "name": "previous <= 1", 
+                  "children": [
+                    {
+                      "name": "duration <= 332", 
+                      "number": 2.0
+                    }, 
+                    {
+                      "name": "duration > 332", 
+                      "number": 2.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "previous > 1", 
+                  "number": 5.0
+                }, 
+                {
+                  "name": "duration <= 238", 
+                  "number": 4.0
+                }, 
+                {
+                  "name": "duration > 238", 
+                  "children": [
+                    {
+                      "name": "previous <= 1", 
+                      "number": 3.0
+                    }, 
+                    {
+                      "name": "previous > 1", 
+                      "number": 6.0
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "month = feb", 
+              "children": [
+                {
+                  "name": "previous <= 3", 
+                  "number": 13.0
+                }, 
+                {
+                  "name": "previous > 3", 
+                  "number": 2.0
+                }
+              ]
+            }, 
+            {
+              "name": "month = mar", 
+              "number": 11.0
+            }, 
+            {
+              "name": "month = apr", 
+              "number": 28.0
+            }, 
+            {
+              "name": "month = sep", 
+              "number": 17.0
+            }
+          ]
+        }, 
+        {
+          "name": "poutcome = failure", 
+          "children": [
+            {
+              "name": "month = may", 
+              "number": 147.0
+            }, 
+            {
+              "name": "month = jun", 
+              "number": 19.0
+            }, 
+            {
+              "name": "month = jul", 
+              "children": [
+                {
+                  "name": "duration <= 113", 
+                  "number": 3.0
+                }, 
+                {
+                  "name": "duration > 113", 
+                  "number": 6.0
+                }, 
+                {
+                  "name": "duration <= 124", 
+                  "number": 4.0
+                }, 
+                {
+                  "name": "duration > 124", 
+                  "number": 9.0
+                }
+              ]
+            }, 
+            {
+              "name": "month = aug", 
+              "children": [
+                {
+                  "name": "duration <= 156", 
+                  "number": 7.0
+                }, 
+                {
+                  "name": "duration > 156", 
+                  "number": 8.0
+                }, 
+                {
+                  "name": "duration <= 107", 
+                  "number": 10.0
+                }, 
+                {
+                  "name": "duration > 107", 
+                  "children": [
+                    {
+                      "name": "previous <= 5", 
+                      "number": 23.0
+                    }, 
+                    {
+                      "name": "previous > 5", 
+                      "number": 4.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "duration <= 62", 
+                  "number": 3.0
+                }, 
+                {
+                  "name": "duration > 62", 
+                  "number": 7.0
+                }, 
+                {
+                  "name": "duration <= 351", 
+                  "number": 233.0
+                }, 
+                {
+                  "name": "duration > 351", 
+                  "number": 95.0
+                }
+              ]
+            }, 
+            {
+              "name": "month = oct", 
+              "children": [
+                {
+                  "name": "duration <= 76", 
+                  "number": 9.0
+                }, 
+                {
+                  "name": "duration > 76", 
+                  "number": 70.0
+                }, 
+                {
+                  "name": "duration <= 126", 
+                  "number": 2.0
+                }, 
+                {
+                  "name": "duration > 126", 
+                  "number": 4.0
+                }, 
+                {
+                  "name": "previous <= 6", 
+                  "children": [
+                    {
+                      "name": "duration <= 86", 
+                      "number": 3.0
+                    }, 
+                    {
+                      "name": "duration > 86", 
+                      "number": 19.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "previous > 6", 
+                  "number": 2.0
+                }
+              ]
+            }, 
+            {
+              "name": "month = nov", 
+              "number": 85.0
+            }, 
+            {
+              "name": "month = dec", 
+              "number": 2.0
+            }, 
+            {
+              "name": "month = jan", 
+              "children": [
+                {
+                  "name": "duration <= 158", 
+                  "number": 20.0
+                }, 
+                {
+                  "name": "duration > 158", 
+                  "children": [
+                    {
+                      "name": "duration <= 190", 
+                      "number": 4.0
+                    }, 
+                    {
+                      "name": "duration > 190", 
+                      "number": 3.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "duration <= 395", 
+                  "number": 62.0
+                }, 
+                {
+                  "name": "duration > 395", 
+                  "number": 16.0
+                }, 
+                {
+                  "name": "previous <= 1", 
+                  "children": [
+                    {
+                      "name": "duration <= 332", 
+                      "number": 2.0
+                    }, 
+                    {
+                      "name": "duration > 332", 
+                      "number": 2.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "previous > 1", 
+                  "number": 5.0
+                }, 
+                {
+                  "name": "duration <= 238", 
+                  "number": 4.0
+                }, 
+                {
+                  "name": "duration > 238", 
+                  "children": [
+                    {
+                      "name": "previous <= 1", 
+                      "number": 3.0
+                    }, 
+                    {
+                      "name": "previous > 1", 
+                      "number": 6.0
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "month = feb", 
+              "number": 72.0
+            }, 
+            {
+              "name": "month = mar", 
+              "number": 12.0
+            }, 
+            {
+              "name": "month = apr", 
+              "children": [
+                {
+                  "name": "duration <= 96", 
+                  "number": 43.0
+                }, 
+                {
+                  "name": "duration > 96", 
+                  "number": 148.0
+                }, 
+                {
+                  "name": "duration <= 178", 
+                  "children": [
+                    {
+                      "name": "previous <= 5", 
+                      "number": 13.0
+                    }, 
+                    {
+                      "name": "previous > 5", 
+                      "number": 3.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "duration > 178", 
+                  "number": 2.0
+                }, 
+                {
+                  "name": "duration <= 191", 
+                  "children": [
+                    {
+                      "name": "previous <= 2", 
+                      "number": 26.0
+                    }, 
+                    {
+                      "name": "previous > 2", 
+                      "children": [
+                        {
+                          "name": "duration <= 132", 
+                          "number": 17.0
+                        }, 
+                        {
+                          "name": "duration > 132", 
+                          "children": [
+                            {
+                              "name": "duration <= 161", 
+                              "number": 3.0
+                            }, 
+                            {
+                              "name": "duration > 161", 
+                              "number": 5.0
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }, 
+                {
+                  "name": "duration > 191", 
+                  "number": 5.0
+                }, 
+                {
+                  "name": "previous <= 6", 
+                  "number": 55.0
+                }, 
+                {
+                  "name": "previous > 6", 
+                  "number": 5.0
+                }
+              ]
+            }, 
+            {
+              "name": "month = sep", 
+              "children": [
+                {
+                  "name": "duration <= 79", 
+                  "number": 7.0
+                }, 
+                {
+                  "name": "duration > 79", 
+                  "children": [
+                    {
+                      "name": "duration <= 183", 
+                      "children": [
+                        {
+                          "name": "duration <= 110", 
+                          "number": 4.0
+                        }, 
+                        {
+                          "name": "duration > 110", 
+                          "number": 16.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "duration > 183", 
+                      "number": 8.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "previous <= 1", 
+                  "number": 3.0
+                }, 
+                {
+                  "name": "previous > 1", 
+                  "children": [
+                    {
+                      "name": "duration <= 139", 
+                      "number": 3.0
+                    }, 
+                    {
+                      "name": "duration > 139", 
+                      "number": 7.0
+                    }, 
+                    {
+                      "name": "duration <= 301", 
+                      "number": 6.0
+                    }, 
+                    {
+                      "name": "duration > 301", 
+                      "number": 10.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "duration <= 77", 
+                  "number": 2.0
+                }, 
+                {
+                  "name": "duration > 77", 
+                  "number": 9.0
+                }
+              ]
+            }, 
+            {
+              "name": "month = may", 
+              "children": [
+                {
+                  "name": "duration <= 340", 
+                  "number": 71.0
+                }, 
+                {
+                  "name": "duration > 340", 
+                  "children": [
+                    {
+                      "name": "previous <= 1", 
+                      "number": 15.0
+                    }, 
+                    {
+                      "name": "previous > 1", 
+                      "number": 22.0
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "month = jun", 
+              "number": 20.0
+            }, 
+            {
+              "name": "month = jul", 
+              "number": 27.0
+            }, 
+            {
+              "name": "month = aug", 
+              "number": 42.0
+            }, 
+            {
+              "name": "month = oct", 
+              "number": 33.0
+            }, 
+            {
+              "name": "month = nov", 
+              "children": [
+                {
+                  "name": "duration <= 450", 
+                  "number": 150.0
+                }, 
+                {
+                  "name": "duration > 450", 
+                  "number": 9.0
+                }, 
+                {
+                  "name": "previous <= 1", 
+                  "number": 5.0
+                }, 
+                {
+                  "name": "previous > 1", 
+                  "children": [
+                    {
+                      "name": "duration <= 139", 
+                      "number": 3.0
+                    }, 
+                    {
+                      "name": "duration > 139", 
+                      "number": 7.0
+                    }, 
+                    {
+                      "name": "duration <= 301", 
+                      "number": 6.0
+                    }, 
+                    {
+                      "name": "duration > 301", 
+                      "number": 10.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "previous <= 6", 
+                  "number": 47.0
+                }, 
+                {
+                  "name": "previous > 6", 
+                  "number": 5.0
+                }
+              ]
+            }, 
+            {
+              "name": "month = dec", 
+              "number": 9.0
+            }, 
+            {
+              "name": "month = jan", 
+              "children": [
+                {
+                  "name": "duration <= 158", 
+                  "number": 20.0
+                }, 
+                {
+                  "name": "duration > 158", 
+                  "children": [
+                    {
+                      "name": "duration <= 190", 
+                      "number": 4.0
+                    }, 
+                    {
+                      "name": "duration > 190", 
+                      "number": 3.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "duration <= 395", 
+                  "number": 62.0
+                }, 
+                {
+                  "name": "duration > 395", 
+                  "number": 16.0
+                }, 
+                {
+                  "name": "previous <= 1", 
+                  "children": [
+                    {
+                      "name": "duration <= 332", 
+                      "number": 2.0
+                    }, 
+                    {
+                      "name": "duration > 332", 
+                      "number": 2.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "previous > 1", 
+                  "number": 5.0
+                }, 
+                {
+                  "name": "duration <= 238", 
+                  "number": 4.0
+                }, 
+                {
+                  "name": "duration > 238", 
+                  "children": [
+                    {
+                      "name": "previous <= 1", 
+                      "number": 3.0
+                    }, 
+                    {
+                      "name": "previous > 1", 
+                      "number": 6.0
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "month = feb", 
+              "number": 33.0
+            }, 
+            {
+              "name": "month = mar", 
+              "number": 14.0
+            }, 
+            {
+              "name": "month = apr", 
+              "children": [
+                {
+                  "name": "duration <= 96", 
+                  "number": 43.0
+                }, 
+                {
+                  "name": "duration > 96", 
+                  "number": 148.0
+                }, 
+                {
+                  "name": "duration <= 178", 
+                  "children": [
+                    {
+                      "name": "previous <= 5", 
+                      "number": 13.0
+                    }, 
+                    {
+                      "name": "previous > 5", 
+                      "number": 3.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "duration > 178", 
+                  "number": 2.0
+                }, 
+                {
+                  "name": "duration <= 191", 
+                  "children": [
+                    {
+                      "name": "previous <= 2", 
+                      "number": 26.0
+                    }, 
+                    {
+                      "name": "previous > 2", 
+                      "children": [
+                        {
+                          "name": "duration <= 132", 
+                          "number": 17.0
+                        }, 
+                        {
+                          "name": "duration > 132", 
+                          "children": [
+                            {
+                              "name": "duration <= 161", 
+                              "number": 3.0
+                            }, 
+                            {
+                              "name": "duration > 161", 
+                              "number": 5.0
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }, 
+                {
+                  "name": "duration > 191", 
+                  "number": 5.0
+                }, 
+                {
+                  "name": "previous <= 6", 
+                  "number": 55.0
+                }, 
+                {
+                  "name": "previous > 6", 
+                  "number": 5.0
+                }
+              ]
+            }, 
+            {
+              "name": "month = sep", 
+              "number": 27.0
+            }
+          ]
+        }, 
+        {
+          "name": "poutcome = success", 
+          "children": [
+            {
+              "name": "duration <= 119", 
+              "children": [
+                {
+                  "name": "month = may", 
+                  "number": 5.0
+                }, 
+                {
+                  "name": "month = jun", 
+                  "number": 8.0
+                }, 
+                {
+                  "name": "month = jul", 
+                  "number": 2.0
+                }, 
+                {
+                  "name": "month = aug", 
+                  "children": [
+                    {
+                      "name": "duration <= 156", 
+                      "number": 7.0
+                    }, 
+                    {
+                      "name": "duration > 156", 
+                      "number": 8.0
+                    }, 
+                    {
+                      "name": "duration <= 107", 
+                      "number": 10.0
+                    }, 
+                    {
+                      "name": "duration > 107", 
+                      "children": [
+                        {
+                          "name": "previous <= 5", 
+                          "number": 23.0
+                        }, 
+                        {
+                          "name": "previous > 5", 
+                          "number": 4.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "duration <= 62", 
+                      "number": 3.0
+                    }, 
+                    {
+                      "name": "duration > 62", 
+                      "number": 7.0
+                    }, 
+                    {
+                      "name": "duration <= 351", 
+                      "number": 233.0
+                    }, 
+                    {
+                      "name": "duration > 351", 
+                      "number": 95.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "month = oct", 
+                  "number": 3.0
+                }, 
+                {
+                  "name": "month = nov", 
+                  "number": 13.0
+                }, 
+                {
+                  "name": "month = dec", 
+                  "number": 1.0
+                }, 
+                {
+                  "name": "month = jan", 
+                  "number": 1.0
+                }, 
+                {
+                  "name": "month = feb", 
+                  "number": 11.0
+                }, 
+                {
+                  "name": "month = mar", 
+                  "number": 3.0
+                }, 
+                {
+                  "name": "month = apr", 
+                  "number": 6.0
+                }, 
+                {
+                  "name": "month = sep", 
+                  "children": [
+                    {
+                      "name": "duration <= 79", 
+                      "number": 7.0
+                    }, 
+                    {
+                      "name": "duration > 79", 
+                      "children": [
+                        {
+                          "name": "duration <= 183", 
+                          "children": [
+                            {
+                              "name": "duration <= 110", 
+                              "number": 4.0
+                            }, 
+                            {
+                              "name": "duration > 110", 
+                              "number": 16.0
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "duration > 183", 
+                          "number": 8.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "previous <= 1", 
+                      "number": 3.0
+                    }, 
+                    {
+                      "name": "previous > 1", 
+                      "children": [
+                        {
+                          "name": "duration <= 139", 
+                          "number": 3.0
+                        }, 
+                        {
+                          "name": "duration > 139", 
+                          "number": 7.0
+                        }, 
+                        {
+                          "name": "duration <= 301", 
+                          "number": 6.0
+                        }, 
+                        {
+                          "name": "duration > 301", 
+                          "number": 10.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "duration <= 77", 
+                      "number": 2.0
+                    }, 
+                    {
+                      "name": "duration > 77", 
+                      "number": 9.0
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "duration > 119", 
+              "number": 227.0
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "name": "duration > 206", 
+      "children": [
+        {
+          "name": "duration <= 472", 
+          "children": [
+            {
+              "name": "previous <= 0", 
+              "children": [
+                {
+                  "name": "month = may", 
+                  "number": 638.0
+                }, 
+                {
+                  "name": "month = jun", 
+                  "number": 289.0
+                }, 
+                {
+                  "name": "month = jul", 
+                  "number": 342.0
+                }, 
+                {
+                  "name": "month = aug", 
+                  "children": [
+                    {
+                      "name": "duration <= 156", 
+                      "number": 7.0
+                    }, 
+                    {
+                      "name": "duration > 156", 
+                      "number": 8.0
+                    }, 
+                    {
+                      "name": "duration <= 107", 
+                      "number": 10.0
+                    }, 
+                    {
+                      "name": "duration > 107", 
+                      "children": [
+                        {
+                          "name": "previous <= 5", 
+                          "number": 23.0
+                        }, 
+                        {
+                          "name": "previous > 5", 
+                          "number": 4.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "duration <= 62", 
+                      "number": 3.0
+                    }, 
+                    {
+                      "name": "duration > 62", 
+                      "number": 7.0
+                    }, 
+                    {
+                      "name": "duration <= 351", 
+                      "number": 233.0
+                    }, 
+                    {
+                      "name": "duration > 351", 
+                      "number": 95.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "month = oct", 
+                  "number": 75.0
+                }, 
+                {
+                  "name": "month = nov", 
+                  "children": [
+                    {
+                      "name": "duration <= 450", 
+                      "number": 150.0
+                    }, 
+                    {
+                      "name": "duration > 450", 
+                      "number": 9.0
+                    }, 
+                    {
+                      "name": "previous <= 1", 
+                      "number": 5.0
+                    }, 
+                    {
+                      "name": "previous > 1", 
+                      "children": [
+                        {
+                          "name": "duration <= 139", 
+                          "number": 3.0
+                        }, 
+                        {
+                          "name": "duration > 139", 
+                          "number": 7.0
+                        }, 
+                        {
+                          "name": "duration <= 301", 
+                          "number": 6.0
+                        }, 
+                        {
+                          "name": "duration > 301", 
+                          "number": 10.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "previous <= 6", 
+                      "number": 47.0
+                    }, 
+                    {
+                      "name": "previous > 6", 
+                      "number": 5.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "month = dec", 
+                  "number": 33.0
+                }, 
+                {
+                  "name": "month = jan", 
+                  "children": [
+                    {
+                      "name": "duration <= 158", 
+                      "number": 20.0
+                    }, 
+                    {
+                      "name": "duration > 158", 
+                      "children": [
+                        {
+                          "name": "duration <= 190", 
+                          "number": 4.0
+                        }, 
+                        {
+                          "name": "duration > 190", 
+                          "number": 3.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "duration <= 395", 
+                      "number": 62.0
+                    }, 
+                    {
+                      "name": "duration > 395", 
+                      "number": 16.0
+                    }, 
+                    {
+                      "name": "previous <= 1", 
+                      "children": [
+                        {
+                          "name": "duration <= 332", 
+                          "number": 2.0
+                        }, 
+                        {
+                          "name": "duration > 332", 
+                          "number": 2.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "previous > 1", 
+                      "number": 5.0
+                    }, 
+                    {
+                      "name": "duration <= 238", 
+                      "number": 4.0
+                    }, 
+                    {
+                      "name": "duration > 238", 
+                      "children": [
+                        {
+                          "name": "previous <= 1", 
+                          "number": 3.0
+                        }, 
+                        {
+                          "name": "previous > 1", 
+                          "number": 6.0
+                        }
+                      ]
+                    }
+                  ]
+                }, 
+                {
+                  "name": "month = feb", 
+                  "number": 165.0
+                }, 
+                {
+                  "name": "month = mar", 
+                  "number": 70.0
+                }, 
+                {
+                  "name": "month = apr", 
+                  "number": 244.0
+                }, 
+                {
+                  "name": "month = sep", 
+                  "number": 62.0
+                }
+              ]
+            }, 
+            {
+              "name": "previous > 0", 
+              "children": [
+                {
+                  "name": "poutcome = unknown", 
+                  "number": 1.0
+                }, 
+                {
+                  "name": "poutcome = other", 
+                  "children": [
+                    {
+                      "name": "month = may", 
+                      "number": 49.0
+                    }, 
+                    {
+                      "name": "month = jun", 
+                      "children": [
+                        {
+                          "name": "duration <= 112", 
+                          "number": 3.0
+                        }, 
+                        {
+                          "name": "duration > 112", 
+                          "number": 5.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "month = jul", 
+                      "children": [
+                        {
+                          "name": "duration <= 113", 
+                          "number": 3.0
+                        }, 
+                        {
+                          "name": "duration > 113", 
+                          "number": 6.0
+                        }, 
+                        {
+                          "name": "duration <= 124", 
+                          "number": 4.0
+                        }, 
+                        {
+                          "name": "duration > 124", 
+                          "number": 9.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "month = aug", 
+                      "children": [
+                        {
+                          "name": "duration <= 156", 
+                          "number": 7.0
+                        }, 
+                        {
+                          "name": "duration > 156", 
+                          "number": 8.0
+                        }, 
+                        {
+                          "name": "duration <= 107", 
+                          "number": 10.0
+                        }, 
+                        {
+                          "name": "duration > 107", 
+                          "children": [
+                            {
+                              "name": "previous <= 5", 
+                              "number": 23.0
+                            }, 
+                            {
+                              "name": "previous > 5", 
+                              "number": 4.0
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "duration <= 62", 
+                          "number": 3.0
+                        }, 
+                        {
+                          "name": "duration > 62", 
+                          "number": 7.0
+                        }, 
+                        {
+                          "name": "duration <= 351", 
+                          "number": 233.0
+                        }, 
+                        {
+                          "name": "duration > 351", 
+                          "number": 95.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "month = oct", 
+                      "children": [
+                        {
+                          "name": "duration <= 76", 
+                          "number": 9.0
+                        }, 
+                        {
+                          "name": "duration > 76", 
+                          "number": 70.0
+                        }, 
+                        {
+                          "name": "duration <= 126", 
+                          "number": 2.0
+                        }, 
+                        {
+                          "name": "duration > 126", 
+                          "number": 4.0
+                        }, 
+                        {
+                          "name": "previous <= 6", 
+                          "children": [
+                            {
+                              "name": "duration <= 86", 
+                              "number": 3.0
+                            }, 
+                            {
+                              "name": "duration > 86", 
+                              "number": 19.0
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "previous > 6", 
+                          "number": 2.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "month = nov", 
+                      "number": 18.0
+                    }, 
+                    {
+                      "name": "month = dec", 
+                      "number": 3.0
+                    }, 
+                    {
+                      "name": "month = jan", 
+                      "number": 24.0
+                    }, 
+                    {
+                      "name": "month = feb", 
+                      "number": 34.0
+                    }, 
+                    {
+                      "name": "month = mar", 
+                      "children": [
+                        {
+                          "name": "duration <= 78", 
+                          "number": 5.0
+                        }, 
+                        {
+                          "name": "duration > 78", 
+                          "number": 77.0
+                        }, 
+                        {
+                          "name": "duration <= 121", 
+                          "number": 2.0
+                        }, 
+                        {
+                          "name": "duration > 121", 
+                          "number": 6.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "month = apr", 
+                      "children": [
+                        {
+                          "name": "duration <= 96", 
+                          "number": 43.0
+                        }, 
+                        {
+                          "name": "duration > 96", 
+                          "number": 148.0
+                        }, 
+                        {
+                          "name": "duration <= 178", 
+                          "children": [
+                            {
+                              "name": "previous <= 5", 
+                              "number": 13.0
+                            }, 
+                            {
+                              "name": "previous > 5", 
+                              "number": 3.0
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "duration > 178", 
+                          "number": 2.0
+                        }, 
+                        {
+                          "name": "duration <= 191", 
+                          "children": [
+                            {
+                              "name": "previous <= 2", 
+                              "number": 26.0
+                            }, 
+                            {
+                              "name": "previous > 2", 
+                              "children": [
+                                {
+                                  "name": "duration <= 132", 
+                                  "number": 17.0
+                                }, 
+                                {
+                                  "name": "duration > 132", 
+                                  "children": [
+                                    {
+                                      "name": "duration <= 161", 
+                                      "number": 3.0
+                                    }, 
+                                    {
+                                      "name": "duration > 161", 
+                                      "number": 5.0
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "duration > 191", 
+                          "number": 5.0
+                        }, 
+                        {
+                          "name": "previous <= 6", 
+                          "number": 55.0
+                        }, 
+                        {
+                          "name": "previous > 6", 
+                          "number": 5.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "month = sep", 
+                      "number": 11.0
+                    }, 
+                    {
+                      "name": "month = may", 
+                      "number": 37.0
+                    }, 
+                    {
+                      "name": "month = jun", 
+                      "number": 18.0
+                    }, 
+                    {
+                      "name": "month = jul", 
+                      "number": 15.0
+                    }, 
+                    {
+                      "name": "month = aug", 
+                      "number": 19.0
+                    }, 
+                    {
+                      "name": "month = oct", 
+                      "number": 13.0
+                    }, 
+                    {
+                      "name": "month = nov", 
+                      "children": [
+                        {
+                          "name": "duration <= 450", 
+                          "number": 150.0
+                        }, 
+                        {
+                          "name": "duration > 450", 
+                          "number": 9.0
+                        }, 
+                        {
+                          "name": "previous <= 1", 
+                          "number": 5.0
+                        }, 
+                        {
+                          "name": "previous > 1", 
+                          "children": [
+                            {
+                              "name": "duration <= 139", 
+                              "number": 3.0
+                            }, 
+                            {
+                              "name": "duration > 139", 
+                              "number": 7.0
+                            }, 
+                            {
+                              "name": "duration <= 301", 
+                              "number": 6.0
+                            }, 
+                            {
+                              "name": "duration > 301", 
+                              "number": 10.0
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "previous <= 6", 
+                          "number": 47.0
+                        }, 
+                        {
+                          "name": "previous > 6", 
+                          "number": 5.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "month = dec", 
+                      "number": 5.0
+                    }, 
+                    {
+                      "name": "month = jan", 
+                      "children": [
+                        {
+                          "name": "duration <= 158", 
+                          "number": 20.0
+                        }, 
+                        {
+                          "name": "duration > 158", 
+                          "children": [
+                            {
+                              "name": "duration <= 190", 
+                              "number": 4.0
+                            }, 
+                            {
+                              "name": "duration > 190", 
+                              "number": 3.0
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "duration <= 395", 
+                          "number": 62.0
+                        }, 
+                        {
+                          "name": "duration > 395", 
+                          "number": 16.0
+                        }, 
+                        {
+                          "name": "previous <= 1", 
+                          "children": [
+                            {
+                              "name": "duration <= 332", 
+                              "number": 2.0
+                            }, 
+                            {
+                              "name": "duration > 332", 
+                              "number": 2.0
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "previous > 1", 
+                          "number": 5.0
+                        }, 
+                        {
+                          "name": "duration <= 238", 
+                          "number": 4.0
+                        }, 
+                        {
+                          "name": "duration > 238", 
+                          "children": [
+                            {
+                              "name": "previous <= 1", 
+                              "number": 3.0
+                            }, 
+                            {
+                              "name": "previous > 1", 
+                              "number": 6.0
+                            }
+                          ]
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "month = feb", 
+                      "children": [
+                        {
+                          "name": "previous <= 3", 
+                          "number": 13.0
+                        }, 
+                        {
+                          "name": "previous > 3", 
+                          "number": 2.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "month = mar", 
+                      "number": 11.0
+                    }, 
+                    {
+                      "name": "month = apr", 
+                      "number": 28.0
+                    }, 
+                    {
+                      "name": "month = sep", 
+                      "number": 17.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "poutcome = failure", 
+                  "children": [
+                    {
+                      "name": "month = may", 
+                      "number": 147.0
+                    }, 
+                    {
+                      "name": "month = jun", 
+                      "number": 19.0
+                    }, 
+                    {
+                      "name": "month = jul", 
+                      "children": [
+                        {
+                          "name": "duration <= 113", 
+                          "number": 3.0
+                        }, 
+                        {
+                          "name": "duration > 113", 
+                          "number": 6.0
+                        }, 
+                        {
+                          "name": "duration <= 124", 
+                          "number": 4.0
+                        }, 
+                        {
+                          "name": "duration > 124", 
+                          "number": 9.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "month = aug", 
+                      "children": [
+                        {
+                          "name": "duration <= 156", 
+                          "number": 7.0
+                        }, 
+                        {
+                          "name": "duration > 156", 
+                          "number": 8.0
+                        }, 
+                        {
+                          "name": "duration <= 107", 
+                          "number": 10.0
+                        }, 
+                        {
+                          "name": "duration > 107", 
+                          "children": [
+                            {
+                              "name": "previous <= 5", 
+                              "number": 23.0
+                            }, 
+                            {
+                              "name": "previous > 5", 
+                              "number": 4.0
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "duration <= 62", 
+                          "number": 3.0
+                        }, 
+                        {
+                          "name": "duration > 62", 
+                          "number": 7.0
+                        }, 
+                        {
+                          "name": "duration <= 351", 
+                          "number": 233.0
+                        }, 
+                        {
+                          "name": "duration > 351", 
+                          "number": 95.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "month = oct", 
+                      "children": [
+                        {
+                          "name": "duration <= 76", 
+                          "number": 9.0
+                        }, 
+                        {
+                          "name": "duration > 76", 
+                          "number": 70.0
+                        }, 
+                        {
+                          "name": "duration <= 126", 
+                          "number": 2.0
+                        }, 
+                        {
+                          "name": "duration > 126", 
+                          "number": 4.0
+                        }, 
+                        {
+                          "name": "previous <= 6", 
+                          "children": [
+                            {
+                              "name": "duration <= 86", 
+                              "number": 3.0
+                            }, 
+                            {
+                              "name": "duration > 86", 
+                              "number": 19.0
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "previous > 6", 
+                          "number": 2.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "month = nov", 
+                      "number": 85.0
+                    }, 
+                    {
+                      "name": "month = dec", 
+                      "number": 2.0
+                    }, 
+                    {
+                      "name": "month = jan", 
+                      "children": [
+                        {
+                          "name": "duration <= 158", 
+                          "number": 20.0
+                        }, 
+                        {
+                          "name": "duration > 158", 
+                          "children": [
+                            {
+                              "name": "duration <= 190", 
+                              "number": 4.0
+                            }, 
+                            {
+                              "name": "duration > 190", 
+                              "number": 3.0
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "duration <= 395", 
+                          "number": 62.0
+                        }, 
+                        {
+                          "name": "duration > 395", 
+                          "number": 16.0
+                        }, 
+                        {
+                          "name": "previous <= 1", 
+                          "children": [
+                            {
+                              "name": "duration <= 332", 
+                              "number": 2.0
+                            }, 
+                            {
+                              "name": "duration > 332", 
+                              "number": 2.0
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "previous > 1", 
+                          "number": 5.0
+                        }, 
+                        {
+                          "name": "duration <= 238", 
+                          "number": 4.0
+                        }, 
+                        {
+                          "name": "duration > 238", 
+                          "children": [
+                            {
+                              "name": "previous <= 1", 
+                              "number": 3.0
+                            }, 
+                            {
+                              "name": "previous > 1", 
+                              "number": 6.0
+                            }
+                          ]
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "month = feb", 
+                      "number": 72.0
+                    }, 
+                    {
+                      "name": "month = mar", 
+                      "number": 12.0
+                    }, 
+                    {
+                      "name": "month = apr", 
+                      "children": [
+                        {
+                          "name": "duration <= 96", 
+                          "number": 43.0
+                        }, 
+                        {
+                          "name": "duration > 96", 
+                          "number": 148.0
+                        }, 
+                        {
+                          "name": "duration <= 178", 
+                          "children": [
+                            {
+                              "name": "previous <= 5", 
+                              "number": 13.0
+                            }, 
+                            {
+                              "name": "previous > 5", 
+                              "number": 3.0
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "duration > 178", 
+                          "number": 2.0
+                        }, 
+                        {
+                          "name": "duration <= 191", 
+                          "children": [
+                            {
+                              "name": "previous <= 2", 
+                              "number": 26.0
+                            }, 
+                            {
+                              "name": "previous > 2", 
+                              "children": [
+                                {
+                                  "name": "duration <= 132", 
+                                  "number": 17.0
+                                }, 
+                                {
+                                  "name": "duration > 132", 
+                                  "children": [
+                                    {
+                                      "name": "duration <= 161", 
+                                      "number": 3.0
+                                    }, 
+                                    {
+                                      "name": "duration > 161", 
+                                      "number": 5.0
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "duration > 191", 
+                          "number": 5.0
+                        }, 
+                        {
+                          "name": "previous <= 6", 
+                          "number": 55.0
+                        }, 
+                        {
+                          "name": "previous > 6", 
+                          "number": 5.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "month = sep", 
+                      "children": [
+                        {
+                          "name": "duration <= 79", 
+                          "number": 7.0
+                        }, 
+                        {
+                          "name": "duration > 79", 
+                          "children": [
+                            {
+                              "name": "duration <= 183", 
+                              "children": [
+                                {
+                                  "name": "duration <= 110", 
+                                  "number": 4.0
+                                }, 
+                                {
+                                  "name": "duration > 110", 
+                                  "number": 16.0
+                                }
+                              ]
+                            }, 
+                            {
+                              "name": "duration > 183", 
+                              "number": 8.0
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "previous <= 1", 
+                          "number": 3.0
+                        }, 
+                        {
+                          "name": "previous > 1", 
+                          "children": [
+                            {
+                              "name": "duration <= 139", 
+                              "number": 3.0
+                            }, 
+                            {
+                              "name": "duration > 139", 
+                              "number": 7.0
+                            }, 
+                            {
+                              "name": "duration <= 301", 
+                              "number": 6.0
+                            }, 
+                            {
+                              "name": "duration > 301", 
+                              "number": 10.0
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "duration <= 77", 
+                          "number": 2.0
+                        }, 
+                        {
+                          "name": "duration > 77", 
+                          "number": 9.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "month = may", 
+                      "children": [
+                        {
+                          "name": "duration <= 340", 
+                          "number": 71.0
+                        }, 
+                        {
+                          "name": "duration > 340", 
+                          "children": [
+                            {
+                              "name": "previous <= 1", 
+                              "number": 15.0
+                            }, 
+                            {
+                              "name": "previous > 1", 
+                              "number": 22.0
+                            }
+                          ]
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "month = jun", 
+                      "number": 20.0
+                    }, 
+                    {
+                      "name": "month = jul", 
+                      "number": 27.0
+                    }, 
+                    {
+                      "name": "month = aug", 
+                      "number": 42.0
+                    }, 
+                    {
+                      "name": "month = oct", 
+                      "number": 33.0
+                    }, 
+                    {
+                      "name": "month = nov", 
+                      "children": [
+                        {
+                          "name": "duration <= 450", 
+                          "number": 150.0
+                        }, 
+                        {
+                          "name": "duration > 450", 
+                          "number": 9.0
+                        }, 
+                        {
+                          "name": "previous <= 1", 
+                          "number": 5.0
+                        }, 
+                        {
+                          "name": "previous > 1", 
+                          "children": [
+                            {
+                              "name": "duration <= 139", 
+                              "number": 3.0
+                            }, 
+                            {
+                              "name": "duration > 139", 
+                              "number": 7.0
+                            }, 
+                            {
+                              "name": "duration <= 301", 
+                              "number": 6.0
+                            }, 
+                            {
+                              "name": "duration > 301", 
+                              "number": 10.0
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "previous <= 6", 
+                          "number": 47.0
+                        }, 
+                        {
+                          "name": "previous > 6", 
+                          "number": 5.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "month = dec", 
+                      "number": 9.0
+                    }, 
+                    {
+                      "name": "month = jan", 
+                      "children": [
+                        {
+                          "name": "duration <= 158", 
+                          "number": 20.0
+                        }, 
+                        {
+                          "name": "duration > 158", 
+                          "children": [
+                            {
+                              "name": "duration <= 190", 
+                              "number": 4.0
+                            }, 
+                            {
+                              "name": "duration > 190", 
+                              "number": 3.0
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "duration <= 395", 
+                          "number": 62.0
+                        }, 
+                        {
+                          "name": "duration > 395", 
+                          "number": 16.0
+                        }, 
+                        {
+                          "name": "previous <= 1", 
+                          "children": [
+                            {
+                              "name": "duration <= 332", 
+                              "number": 2.0
+                            }, 
+                            {
+                              "name": "duration > 332", 
+                              "number": 2.0
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "previous > 1", 
+                          "number": 5.0
+                        }, 
+                        {
+                          "name": "duration <= 238", 
+                          "number": 4.0
+                        }, 
+                        {
+                          "name": "duration > 238", 
+                          "children": [
+                            {
+                              "name": "previous <= 1", 
+                              "number": 3.0
+                            }, 
+                            {
+                              "name": "previous > 1", 
+                              "number": 6.0
+                            }
+                          ]
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "month = feb", 
+                      "number": 33.0
+                    }, 
+                    {
+                      "name": "month = mar", 
+                      "number": 14.0
+                    }, 
+                    {
+                      "name": "month = apr", 
+                      "children": [
+                        {
+                          "name": "duration <= 96", 
+                          "number": 43.0
+                        }, 
+                        {
+                          "name": "duration > 96", 
+                          "number": 148.0
+                        }, 
+                        {
+                          "name": "duration <= 178", 
+                          "children": [
+                            {
+                              "name": "previous <= 5", 
+                              "number": 13.0
+                            }, 
+                            {
+                              "name": "previous > 5", 
+                              "number": 3.0
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "duration > 178", 
+                          "number": 2.0
+                        }, 
+                        {
+                          "name": "duration <= 191", 
+                          "children": [
+                            {
+                              "name": "previous <= 2", 
+                              "number": 26.0
+                            }, 
+                            {
+                              "name": "previous > 2", 
+                              "children": [
+                                {
+                                  "name": "duration <= 132", 
+                                  "number": 17.0
+                                }, 
+                                {
+                                  "name": "duration > 132", 
+                                  "children": [
+                                    {
+                                      "name": "duration <= 161", 
+                                      "number": 3.0
+                                    }, 
+                                    {
+                                      "name": "duration > 161", 
+                                      "number": 5.0
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }, 
+                        {
+                          "name": "duration > 191", 
+                          "number": 5.0
+                        }, 
+                        {
+                          "name": "previous <= 6", 
+                          "number": 55.0
+                        }, 
+                        {
+                          "name": "previous > 6", 
+                          "number": 5.0
+                        }
+                      ]
+                    }, 
+                    {
+                      "name": "month = sep", 
+                      "number": 27.0
+                    }
+                  ]
+                }, 
+                {
+                  "name": "poutcome = success", 
+                  "number": 551.0
+                }
+              ]
+            }
+          ]
+        }, 
+        {
+          "name": "duration > 472", 
+          "number": 2957.0
+        }
+      ]
+    }
+  ]
+}
