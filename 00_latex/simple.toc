@@ -1,0 +1,43 @@
+\baselineskip =0.7\baselineskip 
+\contentsline {chapter}{List of Tables}{v}{chapter*.1}
+\contentsline {chapter}{List of Figures}{vi}{chapter*.2}
+\contentsline {chapter}{Abstract}{viii}{chapter*.4}
+\contentsline {chapter}{Acknowledgements}{ix}{chapter*.5}
+\contentsline {chapter}{\numberline {Chapter 1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {Chapter 2}Background and Related Works}{3}{chapter.2}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {2.1}Related Works}{3}{section.2.1}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {2.2}Classification}{5}{section.2.2}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {2.3}WEKA}{6}{section.2.3}
+\contentsline {chapter}{\numberline {Chapter 3}Dataset}{8}{chapter.3}
+\contentsline {chapter}{\numberline {Chapter 4}Method and Experiment}{10}{chapter.4}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {4.1}Feature Modification}{10}{section.4.1}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {4.2}Pre-processing}{13}{section.4.2}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {4.3}Evaluation Matrics}{14}{section.4.3}
+\contentsline {chapter}{\numberline {Chapter 5}Results}{16}{chapter.5}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {5.1}Unbalanced Dataset}{16}{section.5.1}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {5.2}Balanced Datasets}{18}{section.5.2}
+\contentsline {chapter}{\numberline {Chapter 6}Bank Marketing Prediction System Prototype}{23}{chapter.6}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {6.1}Back-end}{23}{section.6.1}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {6.2}Front-end}{24}{section.6.2}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {6.3}Prediction Cases Based on Previous Campaign}{24}{section.6.3}
+\contentsline {chapter}{\numberline {Chapter 7}Conclusion and Future Work}{27}{chapter.7}
+\contentsline {chapter}{Bibliography}{28}{chapter.7}
+\addvspace {10\p@ }
+\contentsline {subsection}{Appendix A: Outliers of Unbalanced Dataset and Balanced Dataset}{31}{section*.8}
+\contentsline {subsection}{Appendix B: Attributes Displayed on Visualization Page}{33}{section*.9}
+\contentsline {subsection}{Appendix C: Registration Page}{34}{section*.10}
+\contentsline {subsection}{Appendix D: Prediction Page}{35}{section*.11}
+\contentsline {subsection}{Appendix D: Register Page Back-End Source Code}{37}{section*.12}
+\contentsline {subsection}{Appendix D: Register Page Front-End Source Code}{44}{section*.13}
+\contentsline {subsection}{Appendix D: VDecision Tree Visualization Prediction Front-End Source Code}{59}{section*.14}

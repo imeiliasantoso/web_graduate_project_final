@@ -1,0 +1,22 @@
+\baselineskip =0.7\baselineskip 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustrated example of a binary decision tree\cite {Els141}}}{6}{figure.2.1}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Information Gain Unbalanced Dataset }}{19}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Information Gain Balanced Dataset }}{22}{figure.5.2}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Back-end flow}}{23}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Application Back-end and Front-end Flow}}{25}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Visualization Page}}{25}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Full Decision Tree}}{26}{figure.6.4}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Unbalanced Dataset Outliers}}{31}{figure.7.1}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Balanced Dataset Outliers}}{32}{figure.7.2}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Job Attribute and Marital Attribute}}{33}{figure.7.3}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces All Attributes' Class}}{33}{figure.7.4}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Registration Page}}{34}{figure.7.5}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Prediction Page Based on Previous Campaign}}{35}{figure.7.6}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Decision Tree}}{36}{figure.7.7}

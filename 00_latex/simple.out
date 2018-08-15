@@ -1,0 +1,30 @@
+\BOOKMARK [0][-]{chapter*.1}{List of Tables}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{List of Figures}{}% 2
+\BOOKMARK [0][-]{chapter*.4}{Abstract}{}% 3
+\BOOKMARK [0][-]{chapter*.5}{Acknowledgements}{}% 4
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 5
+\BOOKMARK [0][-]{chapter.2}{Background and Related Works}{}% 6
+\BOOKMARK [1][-]{section.2.1}{Related Works}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.2}{Classification}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.3}{WEKA}{chapter.2}% 9
+\BOOKMARK [0][-]{chapter.3}{Dataset}{}% 10
+\BOOKMARK [0][-]{chapter.4}{Method and Experiment}{}% 11
+\BOOKMARK [1][-]{section.4.1}{Feature Modification}{chapter.4}% 12
+\BOOKMARK [1][-]{section.4.2}{Pre-processing}{chapter.4}% 13
+\BOOKMARK [1][-]{section.4.3}{Evaluation Matrics}{chapter.4}% 14
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 15
+\BOOKMARK [1][-]{section.5.1}{Unbalanced Dataset}{chapter.5}% 16
+\BOOKMARK [1][-]{section.5.2}{Balanced Datasets}{chapter.5}% 17
+\BOOKMARK [0][-]{chapter.6}{Bank Marketing Prediction System Prototype}{}% 18
+\BOOKMARK [1][-]{section.6.1}{Back-end}{chapter.6}% 19
+\BOOKMARK [1][-]{section.6.2}{Front-end}{chapter.6}% 20
+\BOOKMARK [1][-]{section.6.3}{Prediction Cases Based on Previous Campaign}{chapter.6}% 21
+\BOOKMARK [0][-]{chapter.7}{Conclusion and Future Work}{}% 22
+\BOOKMARK [0][-]{chapter.7}{Bibliography}{}% 23
+\BOOKMARK [1][-]{section*.8}{Appendix A: Outliers of Unbalanced Dataset and Balanced Dataset}{chapter.7}% 24
+\BOOKMARK [2][-]{section*.9}{Appendix B: Attributes Displayed on Visualization Page}{section*.8}% 25
+\BOOKMARK [2][-]{section*.10}{Appendix C: Registration Page}{section*.8}% 26
+\BOOKMARK [2][-]{section*.11}{Appendix D: Prediction Page}{section*.8}% 27
+\BOOKMARK [2][-]{section*.12}{Appendix D: Register Page Back-End Source Code}{section*.8}% 28
+\BOOKMARK [2][-]{section*.13}{Appendix D: Register Page Front-End Source Code}{section*.8}% 29
+\BOOKMARK [2][-]{section*.14}{Appendix D: VDecision Tree Visualization Prediction Front-End Source Code}{section*.8}% 30
