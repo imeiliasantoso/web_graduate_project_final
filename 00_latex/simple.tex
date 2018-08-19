@@ -34,7 +34,7 @@
 
 
 
-\title{Analysis the Minimum Feature of Bank Marketing Classification}
+\title{Analysis of Direct Bank Marketing Classification with Decision Tree}
 \author{Imeilia Santoso}
 
 % The following degrees are included in the current dalthesis.cls
@@ -94,7 +94,7 @@
 
 Due to the rampant development of financial technology, banking institutions have a problem in customer acquisition and retention. Because of this, they need to consider how to market their products and services efficiently. This research project's primary goal is to increase the efficiency of bank marketing decision-making process by identifying the minimum features that affect the success of predicting the potential customers who are likely to subscribe to banks' campaign. \par
 
-Data mining technique, which plays an important role in providing supports for marketers to analyze data and make decision, proposes in this studies. This project uses two types of an unnamed Portuguese bank institution dataset, balanced and unbalanced, taken from 2008 to 2010.  The feature modification technique such as discretization and categorization helps to improve the quality of the dataset in this experiment. This modification creates eight combinations of the unbalanced and balanced dataset each. In order to select five minimum attributes needed to support bank marketers to make decisions, this paper evaluates and compares the accuracy rates of all dataset using WEKA tool. J48, Naive Bayes, Logistic Regression, IB1 classifier uses in this project.  \par
+Data mining technique, which plays an important role in providing supports for marketers to analyze data and make decision, proposes in these studies. This project uses two types of an unnamed Portuguese bank institution dataset, balanced and unbalanced, taken from 2008 to 2010.  The feature modification technique such as discretization and categorization helps to improve the quality of the dataset in this experiment. This modification creates eight combinations of the unbalanced and balanced dataset each. In order to select five minimum attributes needed to support bank marketers to make decisions, this paper evaluates and compares the accuracy rates of all dataset using WEKA tool. J48, Naive Bayes, Logistic Regression, IB1 classifier uses in this project.  \par
 
 The result of this experiment implies that J48 is the most effective data mining classification algorithm that can help to handle bank telemarketing issues.  In order to demonstrate how this studies can contribute to the decision-making process, the findings from this research use to create a prototype predictive system. \par
 
@@ -116,24 +116,52 @@ I also wish to acknowledge the assistance  of Prof. Kris Mitchell for his patien
 \mainmatter
 
 \chapter{Introduction}
-Direct marketing is one of the bank marketing strategies used to increase sales and retain customers. 
-In general, banking institutions promote their products and services either through mass campaigns targeting random clients, or direct marketing focusing on certain customers \cite{Lin98}. 
-Financial Technology or FinTech, which provides more effective services than traditional financial institutions, is disturbing bank markets and enhances competition in financial markets  \cite{Gbn}. 
-According C. X. Ling and C. Li (1998) , direct marketing has a higher success rate than traditional marketing. For instance, by studying the characteristics and needs of their customers before targeting them with promotions, the response rate for the bank's contacted clients can be improved \cite{Lil13}.\  However, direct marketing still faces some challenges, which affect both customers and marketers. Firstly, selecting clients who are likely to subscribe to new campaigns by undertaking a manual survey of a large customer database is a tedious task \cite{Aye12}. Secondly, customers might feel annoyed by the invasion of privacy involved \cite{Pag03}. In order to solve these problems and increase the rate of subscription, telemarketers use data mining techniques to analyze information that has been collected during previous campaigns and filter the potential contacts. According to Raorane and Kulkarni (2011), the data mining of consumer behavior can help enterprises to determine their marketing strategies by understanding how customers are shifting from one product to another to satisfy their needs.\par
+Direct marketing is one of the marketing strategies used to increase sales and retain customers. In general, banking institutions promote their products and services either through mass campaigns targeting random clients, or direct marketing focusing on certain customers \cite{Lin98}. 
+Financial Technology or FinTech, which provides more effective services than traditional financial institutions, is disturbing bank markets, and enhances competition in financial markets  \cite{Gbn}. 
+Because of this, bank institutions need to keep improving how to approach their customers. 
+According C. X. Ling and C. Li (1998) , direct marketing has a higher success rate than traditional marketing. For instance, by studying the characteristics and needs of their customers before targeting them with promotions, the response rate for the bank's contacted clients can be improved \cite{Lil13}.
+However, direct marketing still faces some challenges, which affect both customers and marketers. Firstly, selecting clients who are likely to subscribe to new campaigns by undertaking a manual survey of a large customer database is a tedious task \cite{Aye12}. Secondly, customers might feel annoyed by the invasion of privacy involved \cite{Pag03}. In order to solve these problems and increase the rate of subscription, telemarketers use data mining techniques to analyze information that has been collected during previous campaigns and filter the potential contacts. According to Raorane and Kulkarni (2011), the data mining of consumer behavior can help enterprises to determine their marketing strategies by understanding how customers are shifting from one product to another to satisfy their needs.\par
 
-Data mining can be defined as the identification of patterns that enable the extraction of meaningful new nontrivial information\ from a large database  \cite{Els141}.\  Data mining is used to predict a probable picture of the future using historical data, and analyze unexpected patterns using a combination of techniques from machine learning, statistics, and database technologies \cite{Aye12}. It can create a predictive model to improve the efficiency of the direct campaign by reducing the number of phone contacts \cite{Se11}. For example, using a simple predictive application before approaching the potential customers can help marketers to prioritize the calls. When bank marketers input the potential client information into the system, the back-end system storing previous dataset can use data mining approaches such as classification or clustering to calculate the probability of the client subscription.\par
+Data mining is used to predict a probable picture of the future using historical data, and analyze unexpected patterns using a combination of techniques from machine learning, statistics, and database technologies \cite{Aye12}. This research project analyzes how data mining classification models can be applied to evaluate previous cases and to predict potential customers effectively. This project uses two types of an unnamed Portuguese bank dataset (original dataset with 17 attributes and 45,211 instances and balanced dataset with 17 attributes and 11,522 instances) to investigate the following research questions:
+\begin{itemize}
+  \item What is the minimum information or attributes required to help bank marketer to make a prediction of potential customers efficiently?
+  \item Which types of the dataset (balanced or unbalanced dataset) has a better accuracy rate?
+  \item Can a feature modification technique improve the quality of dataset?
+\end{itemize}
 
-This project focuses on evaluating the minimum dataset variables required to help marketers easily analyze potential customers using classification. The goal of this project is to demonstrate a prototype of predictive bank marketing system that can help to reduce time and cost in promoting new campaigns. \par
+Since the dataset has a large number of categorical personal data, the experiment uses classification algorithms to create a forecasting model like decision tree.  The purpose of this project is to demonstrate a prototype of a predictive bank marketing system that might benefit telemarketers to reduce their time and cost in promoting new campaigns. Adopting this system at a bank marketing department, users, which are mostly marketers and managers, can learn an accuracy rate of their customers? data instantly, and then prioritize how to approach their potential customers. The prototype lets users input their client profile and previous campaign information to train the dataset. Moreover, users also may input some significant features, studied in this research, of their potential client to find out whether this client will likely to subscribe to the future campaign or not.\par
 
+
+The next chapter of this paper outlines the research background, including literature reviews, classification, and WEKA.  The literature reviews explain the importance of data mining in bank sectors, and the methodologies that have been implemented. The balanced and unbalanced of bank marketing dataset will be discussed profoundly in chapter three. Chapter four describes an attribute modification method and a preprocessing method using WEKA in detail. There are six attributes modified and eight variations for each dataset (balanced and unbalanced dataset). Chapter five defines findings from this research. When five attributes selected using the Chi-Squared algorithm, the unbalanced dataset with modification of 'pdays', shows the best result. The chapter six points out how the system prototype works, including back-end and front-end development. The last chapter discusses conclusion and future works.\par
 
 
 \chapter{Background and Related Works}
 
 \section{Related Works}
 
-There are some previous researches have been working on\ this dataset.  The dataset owners, Moro, Laureano, and Cortez (2011) studied the original dataset to investigate CRISP-DM\ methodology. The CRISP-DM has six steps: business understanding, data understanding, data preparation, modeling, evaluation, and deployment.  The business understanding stage is used to determine a business goal by generating a predictive model. The data understanding, data preparation, modeling and evaluation stages involve data collection and preprocessing. The last phase of these stages is the deployment of the pattern in the real world. Based on the application of the CRISP-DM approach, Support Vector Machine (SVM) was found to be the best predictive as compared to the Native Bayesian (NB) and Decision Trees (DT) methods. The metrics used the area under the ROC (Receiver Operating Characteristics) curve, or simply AUC. \par
+Data mining can be defined as the identification of patterns that enable the extraction of meaningful new nontrivial information  from a large database \cite{Els141}.
+Data mining can create a predictive model to improve the efficiency of the direct campaign by reducing the number of phone contacts \cite{Se11}. 
+The banking industry has gained many benefits, including marketing areas, risk management, fraud and money laundry detection, and investment fields from data mining  \cite{Sre13}. 
+Pulakkazhy and Balan (2013) study how data mining techniques can be applied in banking sectors. The studies concluded that data mining could be used to detect customers? key indicators to classify their behavior patterns, and then forecast their needs in the future. Anusha and Krishnan (2014), who focused on data mining database and preprocessing to improve a bank prediction result in their experiment, suggested three stages to find the valued customers, such as customer acquisition, relationship, and retention. Customer retention is one of the most important aspects to be investigated in today?s competitive business environment \cite{DrK13}. 
+Classification method can be used to acquire new customers, and categorize customers to determine marketing strategies for each category\cite{RAn14}.\par
 
-Patil and Sherekar (2013) used the original dataset to evaluate the performance of Naïve Bayes and Decision Tree to maximize true positive (TP) rate and minimize false positive (FP) rate \cite{Pat13}. True Positive (TP) is the number of correct predictions that an instance is true. It is occurring when the positive prediction of the classifier coincided with a positive prediction of a target attribute\cite{Els141}. The False Positive (FP) is the number of incorrect predictions that an instance is true\cite{Els141}.WEKA was utilized in this experiment. The researchers analyzed the Cost / Benefit for 'yes' and 'no', and calculated the precision and the F-measure. Precision was calculated by dividing the number of instances retrieved that are a relevant and total number of instances that are retrieved. F-measure is the combination between TP and FP. The results show that the efficiency and accuracy of Decision Tree J48 are better than that of Naïve Bayes.  \par
+According to Chitra and Subashini (2013), decision tree is a useful classification for customer retention because it categorizes instances into one or two classes, typically a risky group and a safe group. This method can help to identify who is the most important customers. Studying customer's purchasing patterns can help marketers to retain their existing customer by offering suitable products and services based on every customer needs. Since decision tree can be used to fraud prevention (see \textit{figure} 2.1), and to examine a credit card contract, this method is popular and largely adapted in bank areas \cite{DrK13}. \par
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 1 starts here %%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[h]
+\centering
+		\includegraphics[scale=0.5]{/Users/imeiliasantoso/Desktop/latexfile/master_project/example-simple/media/image13.png}
+	\caption{Data Mining in Banking Sectors\cite{DrK13}}
+	\label{fig:Data_Mining_Bank_Sectors}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 1 Ends here %%%%%%%%%%%%%%%%%%%%
+
+There are some algorithms used in previous studies to investigate the Portuguese bank marketing dataset, which is used in this project. Moro, Laureano, and Cortez (2011), who are the owners of this dataset, explores the original dataset to investigate CRISP-DM methodology. The CRISP-DM has six steps: business understanding, data understanding, data preparation, modeling, evaluation, and deployment.  The business understanding stage is used to determine a business goal by generating a predictive model. The data understanding, data preparation, modeling and evaluation stages involve data collection and preprocessing. The last phase of these stages is the deployment of the pattern in the real world. Based on the application of the CRISP-DM approach, Support Vector Machine (SVM) was found to be the best predictive as compared to the Native Bayesian (NB) and Decision Trees (DT) methods. The metrics used the area under the ROC (Receiver Operating Characteristics) curve, or simply AUC. \par
+
+Patil and Sherekar (2013) also used Moro, Laureano, and Cortez's dataset to evaluate the performance of Naïve Bayes and Decision Tree to maximize true positive (TP) rate and minimize false positive (FP) rate \cite{Pat13}. True Positive (TP) is the number of correct predictions that an instance is true. It is occurring when the positive prediction of the classifier coincided with a positive prediction of a target attribute\cite{Els141}. The False Positive (FP) is the number of incorrect predictions that an instance is true\cite{Els141}.WEKA was utilized in this experiment. The researchers analyzed the Cost / Benefit for 'yes' and 'no', and calculated the precision and the F-measure. Precision was calculated by dividing the number of instances retrieved that are a relevant and total number of instances that are retrieved. F-measure is the combination between TP and FP. The results show that the efficiency and accuracy of Decision Tree J48 are better than that of Naïve Bayes.  \par
 
 There are some statistical measurements utilized to determine the success of the outcomes or predictions.  Two papers written by Elsalamony (2014), and Sharma, Kaur, Gandotra, and Sharma (2015) measured the bank dataset classification using three evaluation metrics, namely accuracy, sensitivity, and specificity. Elsalamony compared some algorithms such as Neural Network, Naive Bayesian, Logistic Regression and Decision Tree to investigated the three classification measurements. The results showed that the Decision Tree algorithm performed slightly better than the others. This research also discovered that the duration of the last conversation with the customer was the most significant factor that influences the success of subscription.  Zakrzewska and Murlewski (2005) detected dataset outliers by evaluating the effectiveness and scalability. The studies applied some data mining algorithms like two-phase, DBSCAN and k-means and show that each algorithm has its advantages and disadvantages. \par
 \raggedbottom
@@ -146,7 +174,7 @@ There are various techniques available for data mining: Association Rule Learnin
 
 This project focuses on classification. Classification is a type of data mining algorithm that creates a pattern on which future records can be evaluated.  The function of classification, in the views of Neeraj Bhargava, Bhargava, and Mathuria (2013), is to manage data to make predictions about new data by putting data in a single group that belongs to a common class. \par
 
-There are some classification algorithms such as Support Vector Machines (SVM), Decision Tree (DT), Nearest Neighbors (NN), Naive Bayes (NB), and Ensemble methods. Each algorithm has its advantages and disadvantages.  SVM is a technique suitable for binary classification tasks and usually deals with pattern classification \cite{Sas14}. NB is an easy and simple probabilistic classifier that calculates the frequency and combinations of values in a dataset \cite{Pat13}.. It can make predictions from a large database because it runs accurately and quickly \cite{Els141}. However, NB can be oversensitive to irrelevant attributes. When two attributes are correlated, and get too much weight in the final decision, it creates the classification bias \cite{Kha10}. NN is a method to categorize data points based on their distance to points in a training dataset using various distance metrics such as Euclidean,\ correlation, and hamming.  DT, which is an algorithm that can learn the value of the dependent attribute of classification, as well as the independent attribute \cite{Nee131}. According to Sharma, Kaur, and Gandotra (2015), is one of the most popular approaches for the classification, description, and generalization of data \cite{Ehs14}. DT represents as trees classifying instances by distributing them based on feature values.  Each node interprets an attribute in an instance to be classified, and each branch interprets a value that the node can assume.\cite{Nih15} (see textit{Figure} 2.1). There are some benefits of DT including handling a variety of input data such as nominal, numeric, and textual, the ability to process missing values, implementing data mining packages over a variety of platform with high performance \cite{Nee131}. \par
+There are some classification algorithms such as Support Vector Machines (SVM), Decision Tree (DT), Nearest Neighbors (NN), Naive Bayes (NB), and Ensemble methods. Each algorithm has its advantages and disadvantages.  SVM is a technique suitable for binary classification tasks and usually deals with pattern classification \cite{Sas14}. NB is an easy and simple probabilistic classifier that calculates the frequency and combinations of values in a dataset \cite{Pat13}. It can make predictions from a large database because it runs accurately and quickly \cite{Els141}. However, NB can be oversensitive to irrelevant attributes. When two attributes are correlated, and get too much weight in the final decision, it creates the classification bias \cite{Kha10}. NN is a method to categorize data points based on their distance to points in a training dataset using various distance metrics such as Euclidean,\ correlation, and hamming.  DT, which is an algorithm that can learn the value of the dependent attribute of classification, as well as the independent attribute \cite{Nee131}. According to Sharma, Kaur, and Gandotra (2015), is one of the most popular approaches for the classification, description, and generalization of data \cite{Ehs14}. DT represents as trees classifying instances by distributing them based on feature values.  Each node interprets an attribute in an instance to be classified, and each branch interprets a value that the node can assume.\cite{Nih15} (see \textit{Figure} 2.2). There are some benefits of DT including handling a variety of input data such as nominal, numeric, and textual, the ability to process missing values, implementing data mining packages over a variety of platform with high performance \cite{Nee131}. \par
 
 \begin{figure}[t!]
 \centering
@@ -218,7 +246,7 @@ The unbalanced dataset has age ranges from 18 to 85 while balanced dataset has s
 \hline
 \multicolumn{4}{|c|}{Age} \\ \hline  \hline
 \multicolumn{1}{|c|}{\multirow{2}{*}{Category}} & \multicolumn{1}{c|}{\multirow{2}{*}{Range}} & \multicolumn{2}{c|}{Number of Occurrence} \\ \cline{3-4} 
-\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{Balanced} & \multicolumn{1}{c|}{Unbalanced} \\ \hline
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{Unbalanced} & \multicolumn{1}{c|}{Balanced} \\ \hline
 \multicolumn{1}{|c|}{young} & \multicolumn{1}{c|}{younger than 25 years' old} & \multicolumn{1}{c|}{809} & \multicolumn{1}{c|}{282} \\ \hline
 \multicolumn{1}{|c|}{working} & \multicolumn{1}{c|}{between 25 and 65 years' old} & \multicolumn{1}{c|}{43651} & \multicolumn{1}{c|}{10842} \\ \hline
 \multicolumn{1}{|c|}{retired} & \multicolumn{1}{c|}{more than 65 years' old} & \multicolumn{1}{c|}{751} & \multicolumn{1}{c|}{398} \\ \hline
@@ -235,7 +263,7 @@ The minimum balance amount of original and unbalanced datasets is -8019 and -113
 \hline
 \multicolumn{4}{|c|}{Balance} \\ \hline \hline
 \multicolumn{1}{|c|}{\multirow{2}{*}{Category}} & \multicolumn{1}{c|}{\multirow{2}{*}{Range}} & \multicolumn{2}{c|}{Number of Occurrence} \\ \cline{3-4} 
-\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{Balanced} & \multicolumn{1}{c|}{Unbalanced} \\ \hline
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{Unbalanced} & \multicolumn{1}{c|}{Balanced} \\ \hline
 \multicolumn{1}{|c|}{verylow} & \multicolumn{1}{c|}{less then 0} & \multicolumn{1}{c|}{7280} & \multicolumn{1}{c|}{0} \\ \hline
 \multicolumn{1}{|c|}{low} & \multicolumn{1}{c|}{between 0 and 1500} & \multicolumn{1}{c|}{27030} & \multicolumn{1}{c|}{1462} \\ \hline
 \multicolumn{1}{|c|}{average} & \multicolumn{1}{c|}{between 1500 and 2000} & \multicolumn{1}{c|}{2400} & \multicolumn{1}{c|}{667} \\ \hline
@@ -256,7 +284,7 @@ The duration attribute was categorized into 4 sections, namely 'fast', 'normal',
 \hline
 \multicolumn{4}{|c|}{Duration} \\ \hline \hline
 \multicolumn{1}{|c|}{\multirow{2}{*}{Category}} & \multicolumn{1}{c|}{\multirow{2}{*}{Range}} & \multicolumn{2}{c|}{Number of Occurrence} \\ \cline{3-4} 
-\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{Balanced} & \multicolumn{1}{c|}{Unbalanced} \\ \hline
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{Unbalanced} & \multicolumn{1}{c|}{Balanced} \\ \hline
 \multicolumn{1}{|c|}{fast} & \multicolumn{1}{c|}{phone calls done less than 400 seconds} & \multicolumn{1}{c|}{37311} & \multicolumn{1}{c|}{7616} \\ \hline
 \multicolumn{1}{|c|}{normal} & \multicolumn{1}{c|}{phone calls done between 400 and 500 seconds} & \multicolumn{1}{c|}{2529} & \multicolumn{1}{c|}{11} \\ \hline
 \multicolumn{1}{|c|}{long} & \multicolumn{1}{c|}{phone calls done between 500 and 1000 seconds} & \multicolumn{1}{c|}{4313} & \multicolumn{1}{c|}{2063} \\ \hline
@@ -278,7 +306,7 @@ The campaign attribute implies\ the number of phone calls done during previous a
 \hline
 \multicolumn{4}{|c|}{Campaign} \\ \hline \hline
 \multicolumn{1}{|c|}{\multirow{2}{*}{Category}} & \multicolumn{1}{c|}{\multirow{2}{*}{Range}} & \multicolumn{2}{c|}{Number of Occurrence} \\ \cline{3-4} 
-\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{Balanced} & \multicolumn{1}{c|}{Unbalanced} \\ \hline
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{Unbalanced} & \multicolumn{1}{c|}{Balanced} \\ \hline
 \multicolumn{1}{|c|}{campaign1} & \multicolumn{1}{c|}{contacts about 1-7 times} & \multicolumn{1}{c|}{42882} & \multicolumn{1}{c|}{10700} \\ \hline
 \multicolumn{1}{|c|}{campaign2} & \multicolumn{1}{c|}{contacts about 8-15 times} & \multicolumn{1}{c|}{1715} & \multicolumn{1}{c|}{366} \\ \hline
 \multicolumn{1}{|c|}{campaign3} & \multicolumn{1}{c|}{contacts about 16-31 times} & \multicolumn{1}{c|}{567} & \multicolumn{1}{c|}{89} \\ \hline
@@ -323,7 +351,7 @@ The previous attribute represents the number of contacts done previously. This f
 \hline
 \multicolumn{4}{|c|}{Previous} \\ \hline \hline
 \multirow{2}{*}{Category} & \multirow{2}{*}{Range} & \multicolumn{2}{c|}{Number of Occurrence} \\ \cline{3-4} 
- &  & Balanced & Unbalanced \\ \hline
+ &  & Unbalanced & Balanced \\ \hline
 never & 0 previous contact or indicate new customers & 36954 & 8324 \\ \hline
 low & 1-12 contacts before & 8072 & 2781 \\ \hline
 med & 13-30 contacts & 173 & 52 \\ \hline
@@ -763,7 +791,11 @@ In total, there are 88 leaves and 133 trees (see \textit{Figure} 6.4). One of th
 
 
 \chapter{Conclusion and Future Work}
-This research project has projected minimum attributes required for predicting the potential bank customers who want to subscribe new campaigns efficiently. The result shows that information from previous campaigns such as 'duration, 'poutcome', 'month', 'pdays' and 'previous' are the significant attributes that can help bank marketers to make decision.  Generally, the modified features have increased the accuracy rate and divided better decision trees.  The unbalanced dataset outperforms the balanced dataset, that altered using sampling method. The result gives the direction for further work to validate the correlation between previous campaign including 'duration','poutcome', 'month', 'pdays', 'day', 'previous', 'campaign' and customer information 'age', 'balance', 'job', 'campaign', 'loan', 'education', and 'marital' to determine the minimum customer attribute information to make decision.\par
+This research project has projected minimum attributes required for predicting the potential bank customers who want to subscribe to new campaigns efficiently.
+The result shows that information from previous campaigns such as 'duration, 'poutcome', 'month', 'pdays' and 'previous' are the significant attributes that can help bank marketers to make decision.  
+The 'pdays' attribute was modified into six groups. Generally, the modified features have increased the accuracy rate and created better cut points of decision trees.   
+The original unbalanced dataset outperforms the balanced dataset, which was altered using the under-sampling method. Currently, these studies did not focus on how to create a better performance of a balanced dataset. However, it is necessary to bring up this topic in the future.
+The result gives the direction for further work to validate the correlation between previous campaign including 'duration','poutcome', 'month', 'pdays', 'day', 'previous', 'campaign' and customer information 'age', 'balance', 'job', 'campaign', 'loan', 'education', and 'marital' to determine the minimum customer attribute information to make decision.\par
 
 
 \bibliographystyle{plain}
@@ -1083,7 +1115,7 @@ def run():
 \newpage
 
 \subsection*{Appendix F: Register Page Front-End Source Code}
-\addcontentsline{toc}{subsection}{Appendix D: Register Page Front-End Source Code}
+\addcontentsline{toc}{subsection}{Appendix F: Register Page Front-End Source Code}
 \begin{lstlisting}[language=HTML]
 <!DOCTYPE HTML>
 <html>
@@ -1549,8 +1581,8 @@ $.ajax({
 
 \clearpage
 \newpage
-\subsection*{Appendix G: Decision Tree Visualization Prediction Front-End Source Code}
-\addcontentsline{toc}{subsection}{Appendix D: VDecision Tree Visualization Prediction Front-End Source Code}
+\subsection*{Appendix G: Decision Tree Visualization Front-End Source Code}
+\addcontentsline{toc}{subsection}{Appendix G: Decision Tree Visualization Front-End Source Code}
 \begin{lstlisting}
 function showTree(){
 
